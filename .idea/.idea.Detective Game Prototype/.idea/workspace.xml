@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/EventDecisionScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Lead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/ConstantAccess.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/EventScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCB9DAC8-AE3A-4886-93B0-F4CD5B0DB0BE/9d/fb1d2a76/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IEventDecision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Code/ResourceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/BoardEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/BoardEventMethods.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardRepresentation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceBoardRepresentation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/EvidencePrefabLookupTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/ConstantAccess.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/GameEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IEventDecision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/EventScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceDetailsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Board.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Event.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Evidence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Lead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Lead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EventDecisionScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EventScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ThD0efUkcKBbTLFH6f622mT3Wl" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17164">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="17164" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="" />
+      <created>1573903212325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573903212325</updated>
+      <workItem from="1573903215048" duration="4787000" />
+      <workItem from="1573995398946" duration="29912000" />
+      <workItem from="1574156386744" duration="1246000" />
+      <workItem from="1574257225282" duration="11445000" />
+      <workItem from="1574293752737" duration="1097000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/EventScript.cs</url>
+          <line>21</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/EventScript.cs" initialLine="20">
+            <startOffsets>
+              <option value="466" />
+            </startOffsets>
+            <endOffsets>
+              <option value="539" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs</url>
+          <line>65</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" initialLine="65">
+            <startOffsets>
+              <option value="1965" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2024" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
