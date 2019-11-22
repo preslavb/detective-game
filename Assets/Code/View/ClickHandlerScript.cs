@@ -19,6 +19,17 @@ namespace View
             OnClick?.Invoke();
         }
 
+        public void PressHold()
+        {
+            _isMousePressed = true;
+            _isMouseHeld = false;
+            _timeElapsed = _timeForHeld;
+            _initialMousePos = Input.mousePosition;
+
+            OnClick?.Invoke();
+            OnHeld?.Invoke();
+        }
+
         public void Released()
         {
             if (_timeElapsed < _timeForHeld && !_isMouseHeld)

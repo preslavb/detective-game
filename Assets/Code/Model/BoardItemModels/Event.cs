@@ -2,6 +2,7 @@ using System;
 using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using View;
 
 namespace Model.BoardItemModels
 {
@@ -53,7 +54,7 @@ namespace Model.BoardItemModels
                     OnExpire?.Invoke();
                 }
                 
-                _counter += Time.deltaTime;
+                _counter += GameTime.Instance.DeltaTime;
             }
         }
 

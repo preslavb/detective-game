@@ -30,13 +30,10 @@ namespace View
             _clickHandlerScript = GetComponent<ClickHandlerScript>();
             _camera = ConstantAccess.Instance.Camera;
             _board = ConstantAccess.Instance.Board;
-        }
 
-        private void Start()
-        {
             // Initialize the plane
             _movementPlane = new Plane(_board.transform.forward, _board.transform.position);
-            
+
             _clickHandlerScript.OnHeld += StartMoving;
             _clickHandlerScript.OnRelease += Released;
             _clickHandlerScript.OnCanceled += ResetPosition;
@@ -47,8 +44,10 @@ namespace View
             _moveWithMouse = true;
             _startPosition = transform.position;
             
+            Update();
+            
             // Bring the canvas forward
-            GetComponentInChildren<Canvas>().sortingOrder += 1000;
+            GetComponentInChildren<Canvas>().sortingOrder = 1000;
         }
 
         private void ResetPosition()
@@ -57,7 +56,7 @@ namespace View
             _moveWithMouse = false;
             
             // Bring the canvas forward
-            GetComponentInChildren<Canvas>().sortingOrder -= 1000;
+            GetComponentInChildren<Canvas>().sortingOrder = 0;
         }
 
         private void Released()
@@ -67,16 +66,16 @@ namespace View
             {
                 SlotScript slotElement = null;
                 
-                if (elements.Any(element => (slotElement = element.GetComponent<SlotScript>()) != null))
+                if (elements.Any(element => (slotElement = element.GetComponent<SlotScript>()) != null) && slotElement.Input(gameObject))
                 {
-                    slotElement.Input(gameObject);
+                    Destroy(gameObject);
                 }
             }
             
             _moveWithMouse = false;
                 
             // Bring the canvas forward
-            GetComponentInChildren<Canvas>().sortingOrder -= 1000;
+            GetComponentInChildren<Canvas>().sortingOrder = 0;
         }
 
         private void Update()

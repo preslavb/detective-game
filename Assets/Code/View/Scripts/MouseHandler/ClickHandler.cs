@@ -22,21 +22,5 @@ namespace View.Scripts.MouseHandler
         public abstract IClickHandler HandleClicks(Camera camera);
 
         private static T _instance;
-
-        protected ClickHandler() {}
-        
-        protected bool GetElementBeneathMouse(Camera camera, out GameObject result)
-        {
-            RaycastHit raycastResult;
-
-            if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out raycastResult, 30))
-            {
-                result = raycastResult.collider.gameObject;
-                return true;
-            }
-
-            result = null;
-            return false;
-        }
     }
 }

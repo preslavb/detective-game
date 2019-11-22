@@ -1,19 +1,37 @@
+using System.Linq;
 using UnityEngine;
+using _Extensions;
 
 namespace View.Scripts.MouseHandler
 {
     public class NormalClickHandler: ClickHandler<NormalClickHandler>, IClickHandler
     {
         private ClickHandlerScript _currentlyHandled;
+
+        public void SimulateClick(ClickHandlerScript clickHandlerScript)
+        {
+            _currentlyHandled = clickHandlerScript;
+            _currentlyHandled.Pressed();
+        }
+
+        public void SimulateHold(ClickHandlerScript clickHandlerScript)
+        {
+            _currentlyHandled = clickHandlerScript;
+            _currentlyHandled.PressHold();
+        }
         
         public override IClickHandler HandleClicks(Camera camera)
         {
             // Just clicked
             if (Input.GetMouseButtonDown(0))
             {
-                if (GetElementBeneathMouse(camera, out var result) && result.GetComponent<ClickHandlerScript>() is var _clickHandlerScript != null)
-                {
-                    _currentlyHandled = _clickHandlerScript;
+                ClickHandlerScript clickHandlerScript = null;
+                
+                if (camera.GetElementBeneathMouse(out var results, true) && 
+                    results.Any(go => (clickHandlerScript = go.GetComponent<ClickHandlerScript>()) != null ) &&
+                    clickHandlerScript != null
+                ) {
+                    _currentlyHandled = clickHandlerScript;
                     _currentlyHandled.Pressed();
                 }
                 
