@@ -14,6 +14,8 @@ namespace View.ViewDataClasses
         [AssetsOnly] 
         [SerializeField] 
         private GameObject _eventPrefab;
+
+        public GameObject EventPrefab => _eventPrefab;
         
         public override GameObject Instantiate(Transform root, IBoardItem boardItem)
         {

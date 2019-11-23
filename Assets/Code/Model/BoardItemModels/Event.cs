@@ -16,29 +16,18 @@ namespace Model.BoardItemModels
         private float _expirationTime;
         
         [SerializeField]
-        [TableList]
-        private EventDecision[] _eventDecisions;
+        private BoardItemSerializable[] _eventDecisions;
 
         [SerializeField]
         [Required]
         [InlineProperty]
-        [InfoBox("If the player does not respond to the event, this will trigger.")]
-        private EventDecision _defaultDecision;
+        [ShowIf("ShowDefaultDecision")]
+        [InfoBox("If the player does not respond to the event, this will spawn.")]
+        private BoardItemSerializable _defaultDecision;
 
         public int DecisionsCount => _eventDecisions.Length;
 
-        public EventDecision GetDecision(int index)
-        {
-            if (index < _eventDecisions.Length)
-            {
-                return _eventDecisions[index];
-            }
-
-            else
-            {
-                throw new Exception("Tried to access event decision at index out of bounds");
-            }
-        }
+        public BoardItemSerializable[] EventDecisions => _eventDecisions;
 
         public float Timer => _counter;
         public float ExpirationTime => _expirationTime;
@@ -59,5 +48,9 @@ namespace Model.BoardItemModels
         }
 
         public Action OnExpire { get; set; }
+        
+        #if UNITY_EDITOR
+        private bool ShowDefaultDecision => _expirationTime > 0;
+#endif
     }
 }

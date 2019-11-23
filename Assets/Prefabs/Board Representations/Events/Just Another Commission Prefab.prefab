@@ -10,8 +10,14 @@ PrefabInstance:
     - target: {fileID: 514220472352049808, guid: a00f1149d5013f148852906dbbe1692b,
         type: 3}
       propertyPath: m_Name
-      value: TestEventPrefab
+      value: Just Another Commission Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3298252196304953222, guid: a00f1149d5013f148852906dbbe1692b,
+        type: 3}
+      propertyPath: _event
+      value: 
+      objectReference: {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846,
+        type: 2}
     - target: {fileID: 514220472352049811, guid: a00f1149d5013f148852906dbbe1692b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,11 +73,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3298252196304953222, guid: a00f1149d5013f148852906dbbe1692b,
+    - target: {fileID: 35970146110548408, guid: a00f1149d5013f148852906dbbe1692b,
         type: 3}
-      propertyPath: _event
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 11400000, guid: 5a8447a0d483f6c49a59574be7002a7a,
-        type: 2}
+      objectReference: {fileID: 21300000, guid: 99e26b4ccc7ce6347937eaca8eea1d1b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a00f1149d5013f148852906dbbe1692b, type: 3}

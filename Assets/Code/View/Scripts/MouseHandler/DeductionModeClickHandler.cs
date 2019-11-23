@@ -1,9 +1,12 @@
+using System.Collections.Generic;
+using Model.Interfaces;
 using UnityEngine;
 
 namespace View.Scripts.MouseHandler
 {
     public class DeductionModeClickHandler: ClickHandler<DeductionModeClickHandler>, IClickHandler
     {
+        
         public override IClickHandler HandleClicks(Camera camera)
         {
             Debug.Log("Deduction");
