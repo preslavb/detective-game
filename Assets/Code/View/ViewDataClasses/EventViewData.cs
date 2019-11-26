@@ -1,14 +1,15 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using View.Interfaces;
+using View.Scripts.Identifiers;
 
 namespace View.ViewDataClasses
 {
     public class EventViewData: IBoardItemViewProperties
     {
         [AssetsOnly]
-        [SerializeField]
-        private GameObject _boardPrefab;
+        [SerializeField] 
+        private ViewIdentifierScript _viewIdentifierScript;
 
         [AssetsOnly] 
         [SerializeField] 
@@ -17,8 +18,8 @@ namespace View.ViewDataClasses
         [SerializeField] 
         private Vector2? _startingPosition;
 
-        public GameObject BoardPrefab => _boardPrefab;
         public GameObject EventPrefab => _eventPrefab;
         public Vector2? StartingPosition => _startingPosition;
+        public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
     }
 }

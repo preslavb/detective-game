@@ -10,9 +10,13 @@
             <e p="Extensions.cs" t="Include" />
           </e>
           <e p="Controller" t="Include">
-            <e p="BoardItemPrefabLookupTable.cs" t="Include" />
+            <e p="BoardItemIdentifierLookupTable.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
+            <e p="GuidHandler.cs" t="Include" />
             <e p="InstantiationController.cs" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="SlotControllerData.cs" t="Include" />
+            </e>
           </e>
           <e p="Delegates.cs" t="Include" />
           <e p="Model" t="Include">
@@ -61,13 +65,16 @@
             <e p="Scripts" t="Include">
               <e p="BoardItemScript.cs" t="Include" />
               <e p="Events" t="Include">
+                <e p="EventCooldownScript.cs" t="Include" />
                 <e p="EventDecisionScript.cs" t="Include" />
-                <e p="EventDetailsScript.cs" t="Include" />
-                <e p="EventScript.cs" t="Include" />
+                <e p="EventDetailsHandler.cs" t="Include" />
                 <e p="SlotScript.cs" t="Include" />
               </e>
               <e p="Evidence" t="Include">
                 <e p="EvidenceDetailsHandler.cs" t="Include" />
+              </e>
+              <e p="Identifiers" t="Include">
+                <e p="ViewIdentifierScript.cs" t="Include" />
               </e>
               <e p="MouseHandler" t="Include">
                 <e p="ClickHandler.cs" t="Include" />

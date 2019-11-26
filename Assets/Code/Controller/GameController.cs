@@ -7,6 +7,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using View;
 using View.Scripts;
+using View.Scripts.Identifiers;
 
 namespace Controller
 {
@@ -28,14 +29,20 @@ namespace Controller
         private ViewHandlerData _viewHandlerData;
 
         [SerializeField]
-        private BoardItemPrefabLookupTable _prefabLookupTable;
+        private BoardItemIdentifierLookupTable _identifierLookupTable;
         
         [ReadOnly] [ShowInInspector]
-        private Dictionary<BoardItemSerializable, GameObject> _modelViewPairs;
+        private Dictionary<BoardItemSerializable, Guid> _modelViewGuids;
+
+        [ReadOnly] [ShowInInspector]
+        private Dictionary<Guid, GameObject> _guidView;
         
         public void Start()
         {
-            _modelViewPairs = new Dictionary<BoardItemSerializable, GameObject>();
+            _modelViewGuids = new Dictionary<BoardItemSerializable, Guid>();
+            _guidView = new Dictionary<Guid, GameObject>();
+            
+            GuidHandler.SetUpGuids(_identifierLookupTable);
             
             // Create the model
             _modelSimulation = new ModelSimulation(_modelSimulationData);
@@ -48,10 +55,10 @@ namespace Controller
                 timescale => _modelSimulation.GameTime.TimeScale = timescale;
             
             _instantiationController = new InstantiationController(
-                _modelViewPairs,
+                _modelViewGuids,
                 _viewHandler,
                 _viewHandlerData,
-                _prefabLookupTable
+                _identifierLookupTable
             );
 
             // Instantiate the starting item views
@@ -76,13 +83,13 @@ namespace Controller
             _viewHandler.Update(_modelSimulation.GameTime.TimeScale);
         }
 
-        private BoardItemPair ConstructPair(BoardItemScript[] scripts)
+        private BoardItemPair ConstructPair(ViewIdentifierScript[] scripts)
         {
-            var firstGO = scripts[0].gameObject;
-            var secondGO = scripts[1].gameObject;
+            var firstGuid = scripts[0].Guid;
+            var secondGuid = scripts[1].Guid;
 
-            var firstKey = _modelViewPairs.FirstOrDefault(x => x.Value == firstGO).Key;
-            var secondKey = _modelViewPairs.FirstOrDefault(x => x.Value == secondGO).Key;
+            var firstKey = _modelViewGuids.FirstOrDefault(x => x.Value == firstGuid).Key;
+            var secondKey = _modelViewGuids.FirstOrDefault(x => x.Value == secondGuid).Key;
 
             return new BoardItemPair(firstKey, secondKey);
         }

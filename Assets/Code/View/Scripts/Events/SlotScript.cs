@@ -1,31 +1,14 @@
-using System.Collections.Generic;
-using System.Linq;
-using Model;
-using Model.BoardItemModels;
-using Model.Interfaces;
-using Sirenix.OdinInspector;
 using UnityEngine;
-using View.Scripts.MouseHandler;
 
-namespace View.Scripts
+namespace View.Scripts.Events
 {
     [RequireComponent(typeof(ClickHandlerScript))]
     public class SlotScript:MonoBehaviour
     {
-        // The board item currently in the slot
-        [SerializeField]
-        [ValueDropdown("GetViableDropdownOptions")]
-        [OnValueChanged("SpawnInEditor")]
-        [ShowIf("_showInInspector")]
-        private BoardItemSerializable _boardItemInSlot;
-
         private ClickHandlerScript _clickHandlerScript;
         
         [SerializeField] private bool _canInput;
         [SerializeField] private bool _canOutput = true;
-
-        [SerializeField]
-        private EventDetailsScript _eventDetailsScript;
 
         private void Awake()
         {
@@ -59,7 +42,7 @@ namespace View.Scripts
 
         private void Output()
         {
-            if (_boardItemInSlot == null) return;
+            return;
         }
     }
 }

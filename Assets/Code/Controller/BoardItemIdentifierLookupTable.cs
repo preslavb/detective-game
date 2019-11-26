@@ -8,7 +8,7 @@ using View.Interfaces;
 namespace Controller
 {
     [CreateAssetMenu(order = 0, fileName = "BoardItemLookUpTable", menuName = "Lookup Tables/Prefab Look Up Table")]
-    public class BoardItemPrefabLookupTable: SerializedScriptableObject
+    public class BoardItemIdentifierLookupTable: SerializedScriptableObject
     {
         public Dictionary<BoardItemSerializable, IBoardItemViewProperties> LookUpTable => _lookUpTable;
 

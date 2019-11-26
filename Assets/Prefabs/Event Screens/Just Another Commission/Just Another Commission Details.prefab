@@ -4941,6 +4941,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7962669791628656657}
     m_Modifications:
+    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot
+      objectReference: {fileID: 0}
     - target: {fileID: 1579946104689207162, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5046,11 +5051,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
-        type: 3}
-      propertyPath: m_Name
-      value: Slot
-      objectReference: {fileID: 0}
     - target: {fileID: 6450093048823181920, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
       propertyPath: _eventDetailsScript
@@ -5077,6 +5077,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7962669791628656657}
     m_Modifications:
+    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot
+      objectReference: {fileID: 0}
     - target: {fileID: 1579946104689207162, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5181,11 +5186,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
-        type: 3}
-      propertyPath: m_Name
-      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 6450093048823181920, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
@@ -5344,6 +5344,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846,
         type: 2}
+    - target: {fileID: 219816515691286185, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: m_Name
+      value: Graph Controller - Just Another Commission Nody Graph
+      objectReference: {fileID: 0}
     - target: {fileID: 219816516045518420, guid: 08285f29b185cfd44be0458a6888211d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -5364,28 +5369,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 219816515684015109, guid: 08285f29b185cfd44be0458a6888211d,
-        type: 3}
-      propertyPath: _boardItemInSlot
-      value: 
-      objectReference: {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba,
-        type: 2}
-    - target: {fileID: 219816515684015109, guid: 08285f29b185cfd44be0458a6888211d,
-        type: 3}
-      propertyPath: _eventDetailsScript
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 219816515691286185, guid: 08285f29b185cfd44be0458a6888211d,
-        type: 3}
-      propertyPath: m_Name
-      value: Graph Controller - Just Another Commission Nody Graph
-      objectReference: {fileID: 0}
-    - target: {fileID: 219816515691286183, guid: 08285f29b185cfd44be0458a6888211d,
-        type: 3}
-      propertyPath: m_graphModel
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e0b958c6ed30648a6b9deeb15ef2f7,
-        type: 2}
     - target: {fileID: 4523015996090618125, guid: 08285f29b185cfd44be0458a6888211d,
         type: 3}
       propertyPath: m_Name
@@ -5396,6 +5379,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5712075427194175922, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469610136991285540, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219816515691286183, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: m_graphModel
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e0b958c6ed30648a6b9deeb15ef2f7,
+        type: 2}
     - target: {fileID: 721309192420491685, guid: 08285f29b185cfd44be0458a6888211d,
         type: 3}
       propertyPath: ViewName
@@ -5431,6 +5430,17 @@ PrefabInstance:
       propertyPath: BehaviorAtStart
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 219816515684015109, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: _boardItemInSlot
+      value: 
+      objectReference: {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba,
+        type: 2}
+    - target: {fileID: 219816515684015109, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: _eventDetailsScript
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8968457897621182782, guid: 08285f29b185cfd44be0458a6888211d,
         type: 3}
       propertyPath: m_text
@@ -5456,17 +5466,8 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 59.55
       objectReference: {fileID: 0}
-    - target: {fileID: 8469610136991285540, guid: 08285f29b185cfd44be0458a6888211d,
-        type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712075427194175922, guid: 08285f29b185cfd44be0458a6888211d,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 219816515583789808, guid: 08285f29b185cfd44be0458a6888211d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 08285f29b185cfd44be0458a6888211d, type: 3}
 --- !u!224 &4868047913850677396 stripped
 RectTransform:

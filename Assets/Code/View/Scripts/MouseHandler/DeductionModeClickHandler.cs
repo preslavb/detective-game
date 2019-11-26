@@ -3,14 +3,15 @@ using _Extensions;
 using Boo.Lang.Runtime;
 using Model.Interfaces;
 using UnityEngine;
+using View.Scripts.Identifiers;
 
 namespace View.Scripts.MouseHandler
 {
     public class DeductionModeClickHandler: ClickHandler
     {
-        private BoardItemScript[] _boardItemPair = new BoardItemScript[2];
+        private ViewIdentifierScript[] _boardItemPair = new ViewIdentifierScript[2];
 
-        public delegate void BoardItemPairDelegate(BoardItemScript[] boardItemScripts);
+        public delegate void BoardItemPairDelegate(ViewIdentifierScript[] boardItemScripts);
         
         public event BoardItemPairDelegate OnCreatedAPair; 
         
@@ -52,16 +53,16 @@ namespace View.Scripts.MouseHandler
 
         private bool HandleObjectClicked(GameObject objectClicked)
         {
-            if (objectClicked.GetComponent<BoardItemScript>() is var boardItemScript && boardItemScript != null)
+            if (objectClicked.GetComponent<ViewIdentifierScript>() is var viewIdentifierScript && viewIdentifierScript != null)
             {
                 if (_boardItemPair[0] == null)
                 {
-                    _boardItemPair[0] = boardItemScript;
+                    _boardItemPair[0] = viewIdentifierScript;
                     return true;
                 }
                 if (_boardItemPair[1] == null)
                 {
-                    _boardItemPair[1] = boardItemScript;
+                    _boardItemPair[1] = viewIdentifierScript;
                     NotifyPairCreation();
                     return true;
                 }

@@ -16,7 +16,7 @@ namespace View.PrefabFactories
         public GameObject CreateInstance(EventFactoryData factoryData)
         {
             // Instantiate the prefab
-            var result = GameObject.Instantiate(factoryData.ViewData.BoardPrefab, ViewHandlerDataReference.FactoryRoot);
+            var result = GameObject.Instantiate(factoryData.ViewData.ViewIdentifierScript.gameObject, ViewHandlerDataReference.FactoryRoot);
 
             // Translate the object if a starting position was given
             result.transform.Translate(new Vector3(factoryData.ViewData.StartingPosition?.x ?? 0, factoryData.ViewData.StartingPosition?.y ?? 0), ViewHandlerDataReference.FactoryRoot);
@@ -24,14 +24,18 @@ namespace View.PrefabFactories
             // Set up the radial countdown 
             if (factoryData.ExpirationTime > 0)
             {
-                result.GetComponent<EventScript>().RadialCountdown.gameObject.SetActive(true);
-                result.GetComponent<EventScript>().RadialCountdown.fillAmount = 1;
+                result.GetComponent<EventCooldownScript>().RadialCountdown.gameObject.SetActive(true);
+                result.GetComponent<EventCooldownScript>().RadialCountdown.fillAmount = 1;
             }
 
             else
             {
-                result.GetComponent<EventScript>().RadialCountdown.gameObject.SetActive(false);
+                result.GetComponent<EventCooldownScript>().RadialCountdown.gameObject.SetActive(false);
             }
+            
+            // Hook up the event data handler
+            result.GetComponent<ClickHandlerScript>().OnPressRelease += () =>
+                factoryData.EventDetailsHandler.ShowDetailsForEvent(factoryData.ViewData.EventPrefab);
             
             // Initialize the board item position handler
             result.GetComponent<BoardItemPositionHandler>().Initialize(ViewHandlerDataReference.MainCamera, ViewHandlerDataReference.FactoryRoot);

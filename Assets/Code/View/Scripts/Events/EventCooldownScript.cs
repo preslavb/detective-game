@@ -6,7 +6,7 @@ using View.Interfaces;
 
 namespace View.Scripts.Events
 {
-    public class EventScript: BoardItemScript, IExpirable
+    public class EventCooldownScript: BoardItemScript, IExpirable
     {
         private ClickHandlerScript _clickHandlerScript;
         

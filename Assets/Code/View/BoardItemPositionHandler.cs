@@ -2,6 +2,7 @@ using System.Linq;
 using _Extensions;
 using UnityEngine;
 using View.Scripts;
+using View.Scripts.Events;
 
 namespace View
 {

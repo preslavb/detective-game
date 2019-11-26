@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using View.Interfaces;
+using View.Scripts.Identifiers;
 
 namespace View.ViewDataClasses
 {
@@ -8,7 +9,7 @@ namespace View.ViewDataClasses
     {
         [AssetsOnly]
         [SerializeField] 
-        private GameObject _boardPrefab;
+        private ViewIdentifierScript _viewIdentifierScript;
         
         [AssetsOnly]
         [SerializeField] 
@@ -17,7 +18,7 @@ namespace View.ViewDataClasses
         [SerializeField] 
         private Vector2? _startingPosition;
         
-        public GameObject BoardPrefab => _boardPrefab;
+        public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
         public GameObject DetailsPrefab => _detailsPrefab;
         public Vector2? StartingPosition => _startingPosition;
     }

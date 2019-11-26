@@ -261,25 +261,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   StartPosition: {x: 0, y: 0, z: 0}
-  StartRotation: {x: -0, y: 0, z: 0}
+  StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
   AutoHideAfterShow: 0
-  AutoHideAfterShowDelay: 3
+  AutoHideAfterShowDelay: 0
   AutoSelectButtonAfterShow: 0
-  BehaviorAtStart: 1
+  BehaviorAtStart: 0
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   DeselectAnyButtonSelectedOnHide: 0
   DeselectAnyButtonSelectedOnShow: 0
-  DisableCanvasWhenHidden: 1
-  DisableGameObjectWhenHidden: 1
-  DisableGraphicRaycasterWhenHidden: 1
+  DisableCanvasWhenHidden: 0
+  DisableGameObjectWhenHidden: 0
+  DisableGraphicRaycasterWhenHidden: 0
   HideBehavior:
     Animation:
       AnimationType: 2
       Move:
         AnimationType: 2
-        Enabled: 1
+        Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.5
+        Duration: 1
       Rotate:
         AnimationType: 2
         Enabled: 0
@@ -553,7 +553,7 @@ MonoBehaviour:
       AnimationType: 1
       Move:
         AnimationType: 1
-        Enabled: 1
+        Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
@@ -573,7 +573,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.5
+        Duration: 1
       Rotate:
         AnimationType: 1
         Enabled: 0
@@ -682,12 +682,12 @@ MonoBehaviour:
     PresetCategory: Uncategorized
     PresetName: Default
   ShowProgressor: {fileID: 0}
-  TargetOrientation: 2
+  TargetOrientation: 0
   UpdateHideProgressorOnShow: 0
   UpdateShowProgressorOnHide: 0
-  UseCustomStartAnchoredPosition: 1
-  ViewCategory: General
-  ViewName: Event Info
+  UseCustomStartAnchoredPosition: 0
+  ViewCategory: 
+  ViewName: 
 --- !u!225 &105326891
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ae0a7256a44498e902fe22890e1a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraDamping: 1.5
+  _cameraDamping: 1
   _camera: {fileID: 1727748004}
   _board: {fileID: 1064183859}
 --- !u!1 &521472866
@@ -1812,15 +1812,15 @@ MonoBehaviour:
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
   AutoHideAfterShow: 0
-  AutoHideAfterShowDelay: 3
+  AutoHideAfterShowDelay: 0
   AutoSelectButtonAfterShow: 0
   BehaviorAtStart: 0
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   DeselectAnyButtonSelectedOnHide: 0
   DeselectAnyButtonSelectedOnShow: 0
-  DisableCanvasWhenHidden: 1
-  DisableGameObjectWhenHidden: 1
-  DisableGraphicRaycasterWhenHidden: 1
+  DisableCanvasWhenHidden: 0
+  DisableGameObjectWhenHidden: 0
+  DisableGraphicRaycasterWhenHidden: 0
   HideBehavior:
     Animation:
       AnimationType: 2
@@ -2229,12 +2229,12 @@ MonoBehaviour:
     PresetCategory: Uncategorized
     PresetName: Default
   ShowProgressor: {fileID: 0}
-  TargetOrientation: 2
+  TargetOrientation: 0
   UpdateHideProgressorOnShow: 0
   UpdateShowProgressorOnHide: 0
-  UseCustomStartAnchoredPosition: 1
-  ViewCategory: General
-  ViewName: Board View
+  UseCustomStartAnchoredPosition: 0
+  ViewCategory: 
+  ViewName: 
 --- !u!225 &581444328
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2958,9 +2958,9 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  CanvasName: MasterCanvas
-  CustomCanvasName: 0
-  DontDestroyCanvasOnLoad: 1
+  CanvasName: Unnamed
+  CustomCanvasName: 1
+  DontDestroyCanvasOnLoad: 0
 --- !u!1 &977175288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,6 +3385,7 @@ GameObject:
   - component: {fileID: 1064183863}
   - component: {fileID: 1064183865}
   - component: {fileID: 1064183866}
+  - component: {fileID: 1064183861}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -3409,6 +3410,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 89.926, y: 360, z: 179.96101}
+--- !u!114 &1064183861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064183859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7846aebc710e4b8591bd0adca166a361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detailsRoot: {fileID: 0}
+  _mainCamera: {fileID: 0}
+  _gameEventMessage: 
 --- !u!114 &1064183863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3716,74 +3732,26 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: b4330278a2cb1ae4caad1f65830aafcd, type: 2}
-    - {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846, type: 2}
-    - {fileID: 1064183863}
-    - {fileID: 1064183865}
-    - {fileID: 1064183866}
-    - {fileID: 1847435057}
-    - {fileID: 1727748004}
-    - {fileID: 11400000, guid: 06441834f8dfb9b4c824790640c8568f, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _gameController
-      Entry: 7
-      Data: 0|Controller.GameController, Assembly-CSharp
-    - Name: _modelSimulationData
-      Entry: 7
-      Data: 1|Model.ModelSimulationData, Assembly-CSharp
-    - Name: _pairResults
-      Entry: 10
-      Data: 0
-    - Name: _startingItems
-      Entry: 7
-      Data: 2|Model.BoardItemModels.BoardItemSerializable[], Assembly-CSharp
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _viewHandlerData
-      Entry: 7
-      Data: 3|View.ViewHandlerData, Assembly-CSharp
-    - Name: _evidenceDetailsHandler
-      Entry: 10
-      Data: 2
-    - Name: _mouseHandler
-      Entry: 10
-      Data: 3
-    - Name: _timeController
-      Entry: 10
-      Data: 4
-    - Name: _factoryRoot
-      Entry: 10
-      Data: 5
-    - Name: _mainCamera
-      Entry: 10
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _prefabLookupTable
-      Entry: 10
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
+  _gameController:
+    _modelSimulationData:
+      _pairResults: {fileID: 11400000, guid: b4330278a2cb1ae4caad1f65830aafcd, type: 2}
+      _startingItems:
+      - {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846, type: 2}
+    _viewHandlerData:
+      _evidenceDetailsHandler: {fileID: 1064183863}
+      _eventDetailsHandler: {fileID: 1064183861}
+      _mouseHandler: {fileID: 1064183865}
+      _timeController: {fileID: 1064183866}
+      _factoryRoot: {fileID: 1847435057}
+      _mainCamera: {fileID: 1727748004}
+    _identifierLookupTable: {fileID: 11400000, guid: 06441834f8dfb9b4c824790640c8568f,
+      type: 2}
 --- !u!1 &1277102809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,7 +4332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   ControllerName: 
-  DontDestroyControllerOnLoad: 1
+  DontDestroyControllerOnLoad: 0
   m_graphModel: {fileID: 11400000, guid: 87707ff2c7287084bab909e52d7d4c3f, type: 2}
 --- !u!4 &1534891743
 Transform:

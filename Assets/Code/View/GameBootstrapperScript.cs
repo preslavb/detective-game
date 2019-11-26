@@ -9,7 +9,7 @@ namespace View
 {
     public class GameBootstrapperScript: SerializedMonoBehaviour
     {
-        [OdinSerialize]
+        [SerializeField]
         [Required]
         private GameController _gameController;
 

@@ -1,19 +1,20 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using View.Interfaces;
+using View.Scripts.Identifiers;
 
 namespace View.ViewDataClasses
 {
     public class ResourceViewData: IBoardItemViewProperties
     {
-        [AssetsOnly] 
+        [AssetsOnly]
         [SerializeField] 
-        private GameObject _boardPrefab;
+        private ViewIdentifierScript _viewIdentifierScript;
         
         [SerializeField] 
         private Vector2? _startingPosition;
 
-        public GameObject BoardPrefab => _boardPrefab;
+        public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
         public Vector2? StartingPosition => _startingPosition;
     }
 }

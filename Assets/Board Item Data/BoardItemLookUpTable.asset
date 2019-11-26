@@ -17,12 +17,12 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846, type: 2}
-    - {fileID: 7657385559841455097, guid: 1411c6cebfe36e24ab65169f5ea8e7a0, type: 3}
+    - {fileID: 2411552537073104587, guid: 1411c6cebfe36e24ab65169f5ea8e7a0, type: 3}
     - {fileID: 4868047913850677397, guid: ec070e5f80121084b8671e1ee8d3e61a, type: 3}
     - {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
-    - {fileID: 9125139113882511709, guid: c7fc3a563bda66f46a0d3a80d25007f6, type: 3}
+    - {fileID: 3859849264399934575, guid: c7fc3a563bda66f46a0d3a80d25007f6, type: 3}
     - {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba, type: 2}
-    - {fileID: 2862755999431777381, guid: 2f1f035d8ed550643b545185a65b9afc, type: 3}
+    - {fileID: 7820919323452428631, guid: 2f1f035d8ed550643b545185a65b9afc, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -52,7 +52,7 @@ MonoBehaviour:
     - Name: $v
       Entry: 7
       Data: 2|View.ViewDataClasses.EventViewData, Assembly-CSharp
-    - Name: _boardPrefab
+    - Name: _viewIdentifierScript
       Entry: 10
       Data: 1
     - Name: _eventPrefab
@@ -91,7 +91,7 @@ MonoBehaviour:
     - Name: $v
       Entry: 7
       Data: 3|View.ViewDataClasses.ResourceViewData, Assembly-CSharp
-    - Name: _boardPrefab
+    - Name: _viewIdentifierScript
       Entry: 10
       Data: 4
     - Name: _startingPosition
@@ -118,7 +118,7 @@ MonoBehaviour:
     - Name: $v
       Entry: 7
       Data: 4|View.ViewDataClasses.EvidenceViewData, Assembly-CSharp
-    - Name: _boardPrefab
+    - Name: _viewIdentifierScript
       Entry: 10
       Data: 6
     - Name: _detailsPrefab

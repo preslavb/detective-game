@@ -1,9 +1,8 @@
-using System;
 using Cinemachine;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace View.Scripts
+namespace View.Scripts.Evidence
 {
     public class EvidenceDetailsHandler: MonoBehaviour
     {
@@ -16,7 +15,7 @@ namespace View.Scripts
 
         private void Start()
         {
-            _boardCamera.MoveToTopOfPrioritySubqueue();
+            // _boardCamera.MoveToTopOfPrioritySubqueue();
         }
 
         public void TransitionToDetails(GameObject prefabToUse)

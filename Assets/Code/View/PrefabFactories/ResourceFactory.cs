@@ -16,7 +16,7 @@ namespace View.PrefabFactories
         public GameObject CreateInstance(ResourceFactoryData factoryData)
         {
             // Instantiate the prefab
-            var result = GameObject.Instantiate(factoryData.ViewData.BoardPrefab, ViewHandlerDataReference.FactoryRoot);
+            var result = GameObject.Instantiate(factoryData.ViewData.ViewIdentifierScript.gameObject, ViewHandlerDataReference.FactoryRoot);
 
             // Translate the object if a starting position was given
             result.transform.Translate(new Vector3(factoryData.ViewData.StartingPosition?.x ?? 0, factoryData.ViewData.StartingPosition?.y ?? 0), ViewHandlerDataReference.FactoryRoot);

@@ -21,7 +21,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _expirationTime: 4
+  _expirationTime: 0
   _eventDecisions:
   - {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba, type: 2}
   - {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
