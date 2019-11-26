@@ -9,10 +9,25 @@ namespace View.Scripts.MouseHandler
         
         private IClickHandler _clickHandler = NormalClickHandler.Instance;
 
+        public IClickHandler ClickHandler
+        {
+            private get { return _clickHandler; }
+            
+            set
+            {
+                if (_clickHandler != value)
+                {
+                    _clickHandler.Escaped();
+                    _clickHandler = value;
+                    _clickHandler.Entered();
+                }
+            }
+        }
+
         // Update is called once per frame
         void Update()
         {
-            _clickHandler = _clickHandler.HandleClicks(_camera);
+            ClickHandler = _clickHandler.HandleClicks(_camera);
         }
     }
 }

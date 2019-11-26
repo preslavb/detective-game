@@ -6,8 +6,6 @@ namespace View
 {
     public class ClickHandlerScript: MonoBehaviour
     {
-        public delegate void VoidDelegate();
-        
         // ______________ PUBLIC API _________________
         public void Pressed()
         {
@@ -53,11 +51,11 @@ namespace View
             OnCanceled?.Invoke();
         }
         
-        public event VoidDelegate OnClick;
-        public event VoidDelegate OnPressRelease;
-        public event VoidDelegate OnRelease;
-        public event VoidDelegate OnHeld;
-        public event VoidDelegate OnCanceled;
+        public event Delegates.VoidDelegate OnClick;
+        public event Delegates.VoidDelegate OnPressRelease;
+        public event Delegates.VoidDelegate OnRelease;
+        public event Delegates.VoidDelegate OnHeld;
+        public event Delegates.VoidDelegate OnCanceled;
 
         // ___________PRIVATE STATE___________________
         private static float _timeForHeld = 0.2f;

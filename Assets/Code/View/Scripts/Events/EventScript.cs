@@ -1,4 +1,5 @@
 using Doozy.Engine;
+using Model;
 using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;

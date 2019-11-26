@@ -6,8 +6,11 @@ using View;
 namespace Model.BoardItemModels
 {
     [CreateAssetMenu(order = 0, fileName = "Evidence 1", menuName = "Board Item Data/Evidence")]
-    public class Evidence: BoardItemData
+    public class Evidence: BoardItemSerializable
     {
+        public override void Update()
+        {
+        }
         
         #if UNITY_EDITOR
 

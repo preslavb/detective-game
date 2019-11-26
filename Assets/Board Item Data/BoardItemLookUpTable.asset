@@ -31,8 +31,7 @@ MonoBehaviour:
     - Name: _lookUpTable
       Entry: 7
       Data: 0|UnityEngine.Rendering.SerializedDictionary`2[[Model.Interfaces.BoardItemSerializable,
-        Assembly-CSharp],[View.Interfaces.IBoardItemViewProperties, Assembly-CSharp]],
-        Unity.RenderPipelines.Core.Runtime
+        Assembly-CSharp],[View.BoardItemViewProperties, Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Model.Interfaces.BoardItemSerializable,

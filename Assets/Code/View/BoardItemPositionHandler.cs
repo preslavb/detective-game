@@ -47,7 +47,7 @@ namespace View
             Update();
             
             // Bring the canvas forward
-            GetComponentInChildren<Canvas>().sortingOrder = 1000;
+            GetComponentInChildren<Canvas>().sortingOrder = 100;
         }
 
         private void ResetPosition()

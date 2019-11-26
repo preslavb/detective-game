@@ -5,7 +5,7 @@ using Event = Model.BoardItemModels.Event;
 
 namespace View.ViewDataClasses
 {
-    public class EventViewData: BoardItemViewProperties<Event>
+    public class EventViewData: BoardItemViewProperties
     {
         [AssetsOnly]
         [SerializeField]

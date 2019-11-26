@@ -10,7 +10,7 @@ namespace Model.Interfaces
         float ExpirationTime { get; }
 
         void Update();
-        
-        Action OnExpire { get; set; }
+
+        event Delegates.VoidDelegate OnExpire;
     }
 }

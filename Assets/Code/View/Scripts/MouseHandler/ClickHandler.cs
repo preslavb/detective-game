@@ -1,4 +1,5 @@
 using System;
+using Sirenix.Serialization;
 using UnityEngine;
 
 namespace View.Scripts.MouseHandler
@@ -18,6 +19,9 @@ namespace View.Scripts.MouseHandler
                 return _instance;
             }
         }
+
+        public abstract void Entered();
+        public abstract void Escaped();
 
         public abstract IClickHandler HandleClicks(Camera camera);
 

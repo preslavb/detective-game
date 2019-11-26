@@ -3523,7 +3523,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1509584708968532880
 MonoBehaviour:
@@ -3988,7 +3988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.12156863, g: 0.53333336, b: 0.7882353, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4941,11 +4941,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7962669791628656657}
     m_Modifications:
-    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
-        type: 3}
-      propertyPath: m_Name
-      value: Slot
-      objectReference: {fileID: 0}
     - target: {fileID: 1579946104689207162, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5051,6 +5046,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot
+      objectReference: {fileID: 0}
     - target: {fileID: 6450093048823181920, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
       propertyPath: _eventDetailsScript
@@ -5077,11 +5077,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7962669791628656657}
     m_Modifications:
-    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
-        type: 3}
-      propertyPath: m_Name
-      value: Slot
-      objectReference: {fileID: 0}
     - target: {fileID: 1579946104689207162, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5186,6 +5181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199257311038845102, guid: 0ffe40f03512b894bb04e8b63515264d,
+        type: 3}
+      propertyPath: m_Name
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 6450093048823181920, guid: 0ffe40f03512b894bb04e8b63515264d,
         type: 3}
@@ -5455,6 +5455,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 59.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469610136991285540, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712075427194175922, guid: 08285f29b185cfd44be0458a6888211d,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08285f29b185cfd44be0458a6888211d, type: 3}

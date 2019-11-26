@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace View.ViewDataClasses
 {
-    public class EvidenceViewData : BoardItemViewProperties<Evidence>
+    public class EvidenceViewData : BoardItemViewProperties
     {
         [AssetsOnly]
         [SerializeField] 

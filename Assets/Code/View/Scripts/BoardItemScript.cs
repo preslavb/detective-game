@@ -1,3 +1,4 @@
+using Model;
 using Model.Interfaces;
 using UnityEngine;
 

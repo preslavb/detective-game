@@ -19,7 +19,17 @@ namespace View.Scripts.MouseHandler
             _currentlyHandled = clickHandlerScript;
             _currentlyHandled.PressHold();
         }
-        
+
+        public override void Entered()
+        {
+            Debug.Log("Entered Normal Click Mode");
+        }
+
+        public override void Escaped()
+        {
+            Debug.Log("Exited Normal Click Mode");
+        }
+
         public override IClickHandler HandleClicks(Camera camera)
         {
             // Just clicked

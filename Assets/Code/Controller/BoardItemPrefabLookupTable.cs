@@ -12,9 +12,9 @@ namespace Controller
     [CreateAssetMenu(order = 2, fileName = "BoardItemLookUpTable", menuName = "Board Item Data/Prefab Look Up Table")]
     public class BoardItemPrefabLookupTable: SerializedScriptableObject
     {
-        public Dictionary<BoardItemSerializable, IBoardItemViewProperties> LookUpTable => _lookUpTable;
+        public Dictionary<BoardItemSerializable, BoardItemViewProperties> LookUpTable => _lookUpTable;
 
         [OdinSerialize]
-        private Dictionary<BoardItemSerializable, IBoardItemViewProperties> _lookUpTable;
+        private Dictionary<BoardItemSerializable, BoardItemViewProperties> _lookUpTable;
     }
 }

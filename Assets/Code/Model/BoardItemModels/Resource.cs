@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Model.BoardItemModels
 {
     [CreateAssetMenu(order = 2, fileName = "Resource 1", menuName = "Board Item Data/Resource")]
-    public class Resource: BoardItemData, IExpirable
+    public class Resource: BoardItemSerializable, IExpirable
     {
         private float _counter = 0f;
         
@@ -18,8 +18,6 @@ namespace Model.BoardItemModels
 
         public override void Update()
         {
-            base.Update();
-            
             // Check if there is an expiration time
             if (_expirationTime > 0)
             {
@@ -33,6 +31,6 @@ namespace Model.BoardItemModels
             }
         }
 
-        public Action OnExpire { get; set; }
+        public event Delegates.VoidDelegate OnExpire;
     }
 }

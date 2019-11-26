@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace View.ViewDataClasses
 {
-    public class ResourceViewData: BoardItemViewProperties<Resource>
+    public class ResourceViewData: BoardItemViewProperties
     {
         [AssetsOnly] 
         [SerializeField] 

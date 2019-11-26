@@ -13,21 +13,22 @@
           <e p="Controller" t="Include">
             <e p="BoardItemPrefabLookupTable.cs" t="Include" />
           </e>
+          <e p="Delegates.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="Board.cs" t="Include" />
             <e p="BoardItemModels" t="Include">
-              <e p="BoardItemData.cs" t="Include" />
               <e p="Event.cs" t="Include" />
               <e p="Evidence.cs" t="Include" />
-              <e p="Lead.cs" t="Include" />
               <e p="Resource.cs" t="Include" />
             </e>
+            <e p="BoardItemSerializable.cs" t="Include" />
             <e p="EventDecision.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IBoardItem.cs" t="Include" />
               <e p="IEventDecision.cs" t="Include" />
               <e p="IExpirable.cs" t="Include" />
             </e>
+            <e p="ModelSimulation.cs" t="Include" />
           </e>
           <e p="View" t="Include">
             <e p="BoardCameraController.cs" t="Include" />
@@ -35,13 +36,18 @@
             <e p="BoardItemSpawner.cs" t="Include" />
             <e p="BoardItemViewProperties.cs" t="Include" />
             <e p="ClickHandlerScript.cs" t="Include" />
+            <e p="GameBootstrapperScript.cs" t="Include" />
+            <e p="GameTime.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IBoardItemViewProperties.cs" t="Include" />
             </e>
             <e p="Scripts" t="Include">
               <e p="BoardItemScript.cs" t="Include" />
-              <e p="EventDecisionScript.cs" t="Include" />
-              <e p="EventScript.cs" t="Include" />
+              <e p="Events" t="Include">
+                <e p="EventDecisionScript.cs" t="Include" />
+                <e p="EventDetailsScript.cs" t="Include" />
+                <e p="EventScript.cs" t="Include" />
+              </e>
               <e p="EvidenceDetailsHandler.cs" t="Include" />
               <e p="EvidenceScript.cs" t="Include" />
               <e p="MouseHandler" t="Include">
@@ -52,10 +58,12 @@
                 <e p="NormalClickHandler.cs" t="Include" />
               </e>
               <e p="SlotScript.cs" t="Include" />
+              <e p="TimeControllerScript.cs" t="Include" />
             </e>
             <e p="ViewDataClasses" t="Include">
               <e p="EventViewData.cs" t="Include" />
               <e p="EvidenceViewData.cs" t="Include" />
+              <e p="ResourceViewData.cs" t="Include" />
             </e>
           </e>
         </e>

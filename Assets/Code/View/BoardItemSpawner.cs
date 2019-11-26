@@ -9,6 +9,7 @@ using Event = Model.BoardItemModels.Event;
 
 namespace View
 {
+    // TODO: This has controller state in it. Refactor out into the controller layer
     public class BoardItemSpawner: MonoBehaviour
     {
         public BoardItemPrefabLookupTable PrefabLookupTable => _prefabLookupTable;
@@ -17,9 +18,11 @@ namespace View
 
         [SerializeField] [Required] private Transform _eventDetailsRoot;
 
+        // TODO: Extract out to controller
         [SerializeField] [Required]
         private BoardItemPrefabLookupTable _prefabLookupTable;
 
+        // TODO: Should just be a view method, being passed a prefab to instantiate
         [Button]
         public GameObject Spawn(BoardItemSerializable boardItem)
         {
@@ -38,6 +41,7 @@ namespace View
             }
         }
 
+        // TODO: Extract into different view layer class
         public void OpenEventDetails(Event eventToOpen)
         {
             EventViewData eventViewData = (EventViewData)_prefabLookupTable.LookUpTable[eventToOpen];

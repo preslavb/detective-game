@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace View
 {
+    // TODO: Extract into model, and give it data through the controller
     public class GameTime: MonoBehaviour
     {
         private float _deltaTime = 0;

@@ -7,7 +7,7 @@ using View;
 namespace Model.BoardItemModels
 {
     [CreateAssetMenu(order = 5, fileName = "Event 1", menuName = "Board Item Data/Event")]
-    public class Event: BoardItemData, IExpirable
+    public class Event: BoardItemSerializable, IExpirable
     {
         [NonSerialized]
         private float _counter = 0;
@@ -34,8 +34,6 @@ namespace Model.BoardItemModels
         
         public override void Update()
         {
-            base.Update();
-
             if (_expirationTime > 0)
             {
                 if (_counter >= _expirationTime)
@@ -47,10 +45,10 @@ namespace Model.BoardItemModels
             }
         }
 
-        public Action OnExpire { get; set; }
+        public event Delegates.VoidDelegate OnExpire;
         
         #if UNITY_EDITOR
         private bool ShowDefaultDecision => _expirationTime > 0;
-#endif
+        #endif
     }
 }
