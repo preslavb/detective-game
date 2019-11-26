@@ -1,12 +1,10 @@
-using Model;
-using Model.BoardItemModels;
-using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using View.Interfaces;
 
 namespace View.ViewDataClasses
 {
-    public class EvidenceViewData : BoardItemViewProperties
+    public class EvidenceViewData : IBoardItemViewProperties
     {
         [AssetsOnly]
         [SerializeField] 
@@ -16,12 +14,11 @@ namespace View.ViewDataClasses
         [SerializeField] 
         private GameObject _detailsPrefab;
 
+        [SerializeField] 
+        private Vector2? _startingPosition;
+        
         public GameObject BoardPrefab => _boardPrefab;
         public GameObject DetailsPrefab => _detailsPrefab;
-
-        public override GameObject Instantiate(Transform root, IBoardItem boardItem)
-        {
-            return GameObject.Instantiate(_boardPrefab, root);
-        }
+        public Vector2? StartingPosition => _startingPosition;
     }
 }

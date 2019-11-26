@@ -6,17 +6,17 @@ using UnityEngine;
 namespace Model.BoardItemModels
 {
     [CreateAssetMenu(order = 2, fileName = "Resource 1", menuName = "Board Item Data/Resource")]
-    public class Resource: BoardItemSerializable, IExpirable
+    public class Resource: BoardItemSerializable
     {
         private float _counter = 0f;
         
         [InfoBox("Set to 0 for no expiration time.")]
         [SerializeField] private float _expirationTime;
 
-        public float Timer => _counter;
-        public float ExpirationTime => _expirationTime;
+        public override float Timer => _counter;
+        public override float ExpirationTime => _expirationTime;
 
-        public override void Update()
+        private void UpdateTimer(float deltaTime)
         {
             // Check if there is an expiration time
             if (_expirationTime > 0)
@@ -27,10 +27,15 @@ namespace Model.BoardItemModels
                     return;
                 }
                 
-                _counter += Time.deltaTime;
+                _counter += deltaTime;
             }
         }
 
-        public event Delegates.VoidDelegate OnExpire;
+        public override void Initialize(ITickable gameTime)
+        {
+            gameTime.OnTick += UpdateTimer;
+        }
+
+        public override event Delegates.VoidDelegate OnExpire;
     }
 }

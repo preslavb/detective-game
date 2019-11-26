@@ -9,37 +9,54 @@
           <e p="_Extensions" t="Include">
             <e p="Extensions.cs" t="Include" />
           </e>
-          <e p="ConstantAccess.cs" t="Include" />
           <e p="Controller" t="Include">
             <e p="BoardItemPrefabLookupTable.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="InstantiationController.cs" t="Include" />
           </e>
           <e p="Delegates.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="Board.cs" t="Include" />
             <e p="BoardItemModels" t="Include">
+              <e p="BoardItemSerializable.cs" t="Include" />
               <e p="Event.cs" t="Include" />
               <e p="Evidence.cs" t="Include" />
               <e p="Resource.cs" t="Include" />
             </e>
-            <e p="BoardItemSerializable.cs" t="Include" />
+            <e p="BoardItemPair.cs" t="Include" />
             <e p="EventDecision.cs" t="Include" />
+            <e p="GameTime.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IBoardItem.cs" t="Include" />
               <e p="IEventDecision.cs" t="Include" />
               <e p="IExpirable.cs" t="Include" />
+              <e p="ITickable.cs" t="Include" />
             </e>
             <e p="ModelSimulation.cs" t="Include" />
+            <e p="ModelSimulationData.cs" t="Include" />
+            <e p="PairResolver.cs" t="Include" />
+            <e p="PairResultLookupTable.cs" t="Include" />
           </e>
           <e p="View" t="Include">
             <e p="BoardCameraController.cs" t="Include" />
             <e p="BoardItemPositionHandler.cs" t="Include" />
-            <e p="BoardItemSpawner.cs" t="Include" />
-            <e p="BoardItemViewProperties.cs" t="Include" />
             <e p="ClickHandlerScript.cs" t="Include" />
             <e p="GameBootstrapperScript.cs" t="Include" />
-            <e p="GameTime.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IBoardItemViewProperties.cs" t="Include" />
+              <e p="IExpirable.cs" t="Include" />
+            </e>
+            <e p="PrefabFactories" t="Include">
+              <e p="EventFactory.cs" t="Include" />
+              <e p="EvidenceFactory.cs" t="Include" />
+              <e p="FactoryData" t="Include">
+                <e p="EventFactoryData.cs" t="Include" />
+                <e p="EvidenceFactoryData.cs" t="Include" />
+                <e p="IFactoryData.cs" t="Include" />
+                <e p="ResourceFactoryData.cs" t="Include" />
+              </e>
+              <e p="IPrefabFactory.cs" t="Include" />
+              <e p="ResourceFactory.cs" t="Include" />
             </e>
             <e p="Scripts" t="Include">
               <e p="BoardItemScript.cs" t="Include" />
@@ -47,9 +64,11 @@
                 <e p="EventDecisionScript.cs" t="Include" />
                 <e p="EventDetailsScript.cs" t="Include" />
                 <e p="EventScript.cs" t="Include" />
+                <e p="SlotScript.cs" t="Include" />
               </e>
-              <e p="EvidenceDetailsHandler.cs" t="Include" />
-              <e p="EvidenceScript.cs" t="Include" />
+              <e p="Evidence" t="Include">
+                <e p="EvidenceDetailsHandler.cs" t="Include" />
+              </e>
               <e p="MouseHandler" t="Include">
                 <e p="ClickHandler.cs" t="Include" />
                 <e p="DeductionModeClickHandler.cs" t="Include" />
@@ -57,7 +76,6 @@
                 <e p="MouseHandler.cs" t="Include" />
                 <e p="NormalClickHandler.cs" t="Include" />
               </e>
-              <e p="SlotScript.cs" t="Include" />
               <e p="TimeControllerScript.cs" t="Include" />
             </e>
             <e p="ViewDataClasses" t="Include">
@@ -65,6 +83,8 @@
               <e p="EvidenceViewData.cs" t="Include" />
               <e p="ResourceViewData.cs" t="Include" />
             </e>
+            <e p="ViewHandler.cs" t="Include" />
+            <e p="ViewHandlerData.cs" t="Include" />
           </e>
         </e>
         <e p="Demigiant" t="Include">

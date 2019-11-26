@@ -7,7 +7,7 @@ using View;
 namespace Model.BoardItemModels
 {
     [CreateAssetMenu(order = 5, fileName = "Event 1", menuName = "Board Item Data/Event")]
-    public class Event: BoardItemSerializable, IExpirable
+    public class Event: BoardItemSerializable
     {
         [NonSerialized]
         private float _counter = 0;
@@ -29,10 +29,10 @@ namespace Model.BoardItemModels
 
         public BoardItemSerializable[] EventDecisions => _eventDecisions;
 
-        public float Timer => _counter;
-        public float ExpirationTime => _expirationTime;
-        
-        public override void Update()
+        public override float Timer => _counter;
+        public override float ExpirationTime => _expirationTime;
+
+        private void UpdateTimer(float deltaTime)
         {
             if (_expirationTime > 0)
             {
@@ -41,11 +41,17 @@ namespace Model.BoardItemModels
                     OnExpire?.Invoke();
                 }
                 
-                _counter += GameTime.Instance.DeltaTime;
+                _counter += deltaTime;
+                OnTimerChange?.Invoke(1 - (_counter/_expirationTime));
             }
         }
 
-        public event Delegates.VoidDelegate OnExpire;
+        public override void Initialize(ITickable gameTime)
+        {
+            gameTime.OnTick += UpdateTimer;
+        }
+
+        public override event Delegates.VoidDelegate OnExpire;
         
         #if UNITY_EDITOR
         private bool ShowDefaultDecision => _expirationTime > 0;

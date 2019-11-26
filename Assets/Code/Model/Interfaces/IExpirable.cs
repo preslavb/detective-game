@@ -1,6 +1,4 @@
 using System;
-using Sirenix.OdinInspector;
-using UnityEngine;
 
 namespace Model.Interfaces
 {
@@ -9,8 +7,9 @@ namespace Model.Interfaces
         float Timer { get; }
         float ExpirationTime { get; }
 
-        void Update();
+        void Initialize(ITickable gameTime);
 
+        Action<float> OnTimerChange { get; set; }
         event Delegates.VoidDelegate OnExpire;
     }
 }

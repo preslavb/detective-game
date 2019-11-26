@@ -1,8 +1,5 @@
-using System;
 using System.Linq;
 using _Extensions;
-using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using UnityEngine;
 using View.Scripts;
 
@@ -12,8 +9,8 @@ namespace View
     public class BoardItemPositionHandler: MonoBehaviour
     {
         //______________ PRIVATE STATE  ______________
-        [SerializeField] [HideInPrefabAssets] private Camera _camera;
-        [SerializeField] [HideInPrefabAssets] private GameObject _board;
+        private Camera _camera;
+        private Transform _board;
         
         private static float _boardOffset = -0.115f;
         
@@ -24,15 +21,16 @@ namespace View
         private bool _moveWithMouse = false;
 
         private Vector3 _startPosition;
-        
-        private void Awake()
+
+        public void Initialize(Camera camera, Transform board)
         {
+            _camera = camera;
+            _board = board;
+            
             _clickHandlerScript = GetComponent<ClickHandlerScript>();
-            _camera = ConstantAccess.Instance.Camera;
-            _board = ConstantAccess.Instance.Board;
 
             // Initialize the plane
-            _movementPlane = new Plane(_board.transform.forward, _board.transform.position);
+            _movementPlane = new Plane(_board.forward, _board.position);
 
             _clickHandlerScript.OnHeld += StartMoving;
             _clickHandlerScript.OnRelease += Released;

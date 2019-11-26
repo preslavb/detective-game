@@ -2,52 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Delegates.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Delegates.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Controller/ViewFactories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/Interfaces/ITickable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/Interfaces/ITickable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulationData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulationData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EventFactoryData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EventFactoryData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Board Item Data/BoardItemLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Board Item Data/BoardItemLookUpTable.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Board Item Data/Events/Just Another Commission.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Board Item Data/Events/Just Another Commission.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/ConstantAccess.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/ConstantAccess.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Model/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Board.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemData.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Lead.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Lead.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/GameTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/GameTime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/GameTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/GameTime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/GameTime.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/GameTime.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceDetailsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceDetailsHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceScript.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Events/Just Another Commission Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Events/Just Another Commission Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Event Screen Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Event Screen Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Just Another Commission/Just Another Commission Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Just Another Commission/Just Another Commission Details.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,96 +98,114 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Board Item Data/BoardItemLookUpTable.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/GameTime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EventFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/ConstantAccess.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Delegates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/ITickable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/79/4639a6e9/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/98/a1ccc83f/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCB9DAC8-AE3A-4886-93B0-F4CD5B0DB0BE/9d/fb1d2a76/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/GameTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Model/ModelSimulationData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IEventDecision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/EvidencePrefabLookupTable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/ConstantAccess.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/GameEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IEventDecision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/EvidenceViewData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/EventScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceDetailsHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Event.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Evidence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Lead.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Resource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Lead.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EventDecisionScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EventScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/EvidenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Delegates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/SlotScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/GameTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/PrefabFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemViewProperties.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/GameTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Delegates.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Board.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/ITickable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EventFactoryData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemSerializable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/GameTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/Board.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulationData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" />
       </list>
     </option>
   </component>
@@ -189,10 +245,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17164">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="27748">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17164" />
+      <option name="pid" value="27748" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -216,6 +272,7 @@
       <workItem from="1574591823154" duration="95000" />
       <workItem from="1574636525871" duration="198000" />
       <workItem from="1574707654947" duration="3735000" />
+      <workItem from="1574758558612" duration="29621000" />
     </task>
     <servers />
   </component>

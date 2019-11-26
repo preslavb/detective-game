@@ -1,25 +1,26 @@
 using System;
+using Controller;
 using Model;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 
 namespace View
 {
-    public class GameBootstrapperScript: MonoBehaviour
+    public class GameBootstrapperScript: SerializedMonoBehaviour
     {
-        private static GameBootstrapperScript _instance;
+        [OdinSerialize]
+        [Required]
+        private GameController _gameController;
 
-        public static GameBootstrapperScript Instance => _instance;
-
-        private ModelSimulation _modelSimulation;
-
-        [SerializeField]
-        private BoardItemSerializable[] _initialBoardItems;
-
-        private void Awake()
+        private void Start()
         {
-            _instance = this;
-            
-            _modelSimulation = new ModelSimulation(_initialBoardItems);
+            _gameController.Start();
+        }
+
+        private void Update()
+        {
+            _gameController.Update();
         }
     }
 }

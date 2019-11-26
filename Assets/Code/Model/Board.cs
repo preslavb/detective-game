@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Model.BoardItemModels;
 using Model.Interfaces;
 
 namespace Model

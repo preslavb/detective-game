@@ -7,7 +7,10 @@ namespace View.Scripts.MouseHandler
     {
         [SerializeField] private Camera _camera;
         
-        private IClickHandler _clickHandler = NormalClickHandler.Instance;
+        public NormalClickHandler NormalClickHandler { get; }
+        public DeductionModeClickHandler DeductionModeClickHandler { get; }
+
+        private IClickHandler _clickHandler;
 
         public IClickHandler ClickHandler
         {
@@ -24,7 +27,14 @@ namespace View.Scripts.MouseHandler
             }
         }
 
-        // Update is called once per frame
+        // WARNING: this is a measured risk, and ctors shouldn't usually be used with MonoBehaviours
+        public MouseHandler()
+        {
+            NormalClickHandler = new NormalClickHandler(this);
+            DeductionModeClickHandler = new DeductionModeClickHandler(this);
+            _clickHandler = NormalClickHandler;
+        }
+
         void Update()
         {
             ClickHandler = _clickHandler.HandleClicks(_camera);

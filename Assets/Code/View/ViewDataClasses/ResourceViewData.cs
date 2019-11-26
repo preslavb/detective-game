@@ -1,19 +1,19 @@
-using Model.BoardItemModels;
-using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using View.Interfaces;
 
 namespace View.ViewDataClasses
 {
-    public class ResourceViewData: BoardItemViewProperties
+    public class ResourceViewData: IBoardItemViewProperties
     {
         [AssetsOnly] 
         [SerializeField] 
         private GameObject _boardPrefab;
         
-        public override GameObject Instantiate(Transform root, IBoardItem boardItem)
-        {
-            return GameObject.Instantiate(_boardPrefab, root);
-        }
+        [SerializeField] 
+        private Vector2? _startingPosition;
+
+        public GameObject BoardPrefab => _boardPrefab;
+        public Vector2? StartingPosition => _startingPosition;
     }
 }

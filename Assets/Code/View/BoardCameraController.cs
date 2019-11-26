@@ -5,6 +5,7 @@ using _Extensions;
 
 namespace View
 {
+    [RequireComponent(typeof(CinemachineVirtualCamera))]
     public class BoardCameraController:MonoBehaviour
     {
         [SerializeField]
@@ -17,12 +18,14 @@ namespace View
         [SerializeField]
         private Camera _camera;
 
+        [SerializeField] 
+        private GameObject _board;
+
         private CinemachineVirtualCamera _virtualCamera;
 
         private void Awake()
         {
-            var board = ConstantAccess.Instance.Board;
-            _planeToMoveOn = new Plane(board.transform.forward, board.transform.position);
+            _planeToMoveOn = new Plane(_board.transform.forward, _board.transform.position);
             _virtualCamera = GetComponent<CinemachineVirtualCamera>();
         }
 

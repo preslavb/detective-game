@@ -4,7 +4,7 @@ using _Extensions;
 
 namespace View.Scripts.MouseHandler
 {
-    public class NormalClickHandler: ClickHandler<NormalClickHandler>, IClickHandler
+    public class NormalClickHandler: ClickHandler
     {
         private ClickHandlerScript _currentlyHandled;
 
@@ -45,7 +45,7 @@ namespace View.Scripts.MouseHandler
                     _currentlyHandled.Pressed();
                 }
                 
-                return Instance;
+                return this;
             }
             
             // Just released
@@ -57,7 +57,7 @@ namespace View.Scripts.MouseHandler
                     _currentlyHandled = null;
                 }
                 
-                return Instance;
+                return this;
             }
             
             // Clicked right mouse button, so go to right mouse handler
@@ -67,13 +67,17 @@ namespace View.Scripts.MouseHandler
                 {
                     _currentlyHandled.Canceled();
                     _currentlyHandled = null;
-                    return Instance;
+                    return this;
                 }
                 
-                return DeductionModeClickHandler.Instance;
+                return _mouseHandlerReference.DeductionModeClickHandler;
             }
 
-            return Instance;
+            return this;
+        }
+
+        public NormalClickHandler(MouseHandler mouseHandler) : base(mouseHandler)
+        {
         }
     }
 }

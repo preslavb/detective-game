@@ -5,26 +5,18 @@ using UnityEngine;
 namespace View.Scripts.MouseHandler
 {
     [Serializable]
-    public abstract class ClickHandler<T> where T: ClickHandler<T>, IClickHandler, new()
+    public abstract class ClickHandler: IClickHandler
     {
-        public static T Instance
+        public ClickHandler(MouseHandler mouseHandler)
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new T();
-                }
-
-                return _instance;
-            }
+            _mouseHandlerReference = mouseHandler;
         }
+        
+        protected MouseHandler _mouseHandlerReference;
 
         public abstract void Entered();
         public abstract void Escaped();
 
         public abstract IClickHandler HandleClicks(Camera camera);
-
-        private static T _instance;
     }
 }

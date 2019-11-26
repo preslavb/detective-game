@@ -1,11 +1,10 @@
-using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using Event = Model.BoardItemModels.Event;
+using View.Interfaces;
 
 namespace View.ViewDataClasses
 {
-    public class EventViewData: BoardItemViewProperties
+    public class EventViewData: IBoardItemViewProperties
     {
         [AssetsOnly]
         [SerializeField]
@@ -15,15 +14,11 @@ namespace View.ViewDataClasses
         [SerializeField] 
         private GameObject _eventPrefab;
 
+        [SerializeField] 
+        private Vector2? _startingPosition;
+
+        public GameObject BoardPrefab => _boardPrefab;
         public GameObject EventPrefab => _eventPrefab;
-        
-        public override GameObject Instantiate(Transform root, IBoardItem boardItem)
-        {
-            // Cast to the type
-            var boardItemTypeCast = (Event)boardItem;
-            
-            // Instantiate the prefab
-            return GameObject.Instantiate(_boardPrefab, root);
-        }
+        public Vector2? StartingPosition => _startingPosition;
     }
 }

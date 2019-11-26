@@ -1,4 +1,5 @@
 using System;
+using Model.BoardItemModels;
 using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;

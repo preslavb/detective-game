@@ -1,48 +1,24 @@
 using Doozy.Engine;
-using Model;
-using Model.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
-using Event = Model.BoardItemModels.Event;
+using View.Interfaces;
 
-namespace View.Scripts
+namespace View.Scripts.Events
 {
-    public class EventScript: BoardItemScript
+    public class EventScript: BoardItemScript, IExpirable
     {
         private ClickHandlerScript _clickHandlerScript;
         
         [Required]
         [SerializeField]
         private Image _radialCountdown;
-        
-        [Required]
-        [SerializeField] 
-        private Event _event;
 
-        private void Awake()
+        public Image RadialCountdown => _radialCountdown;
+
+        public void UpdateExpirable(float t)
         {
-            _clickHandlerScript = GetComponent<ClickHandlerScript>();
-            _clickHandlerScript.OnPressRelease += OpenRelevantEventDetails;
-
-            if (_event.ExpirationTime == 0)
-            {
-                _radialCountdown.gameObject.SetActive(false);
-            }
+            _radialCountdown.fillAmount = t;
         }
-
-        private void Update()
-        {
-            _event?.Update();
-            _radialCountdown.fillAmount = 1 - (_event.Timer / _event.ExpirationTime);
-        }
-
-        private void OpenRelevantEventDetails()
-        {
-            ConstantAccess.Instance.Board.GetComponent<BoardItemSpawner>().OpenEventDetails(_event);
-            GameEventMessage.SendEvent("Open Event Details");
-        }
-
-        public override BoardItemSerializable BoardItem => _event;
     }
 }

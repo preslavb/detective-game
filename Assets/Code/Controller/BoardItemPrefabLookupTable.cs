@@ -1,20 +1,20 @@
 using System.Collections.Generic;
-using Model;
-using Model.Interfaces;
+using Model.BoardItemModels;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
-using View;
 using View.Interfaces;
 
 namespace Controller
 {
-    [CreateAssetMenu(order = 2, fileName = "BoardItemLookUpTable", menuName = "Board Item Data/Prefab Look Up Table")]
+    [CreateAssetMenu(order = 0, fileName = "BoardItemLookUpTable", menuName = "Lookup Tables/Prefab Look Up Table")]
     public class BoardItemPrefabLookupTable: SerializedScriptableObject
     {
-        public Dictionary<BoardItemSerializable, BoardItemViewProperties> LookUpTable => _lookUpTable;
+        public Dictionary<BoardItemSerializable, IBoardItemViewProperties> LookUpTable => _lookUpTable;
 
         [OdinSerialize]
-        private Dictionary<BoardItemSerializable, BoardItemViewProperties> _lookUpTable;
+        private Dictionary<BoardItemSerializable, IBoardItemViewProperties> _lookUpTable;
+        
+        public IBoardItemViewProperties this[BoardItemSerializable key] => _lookUpTable[key];
     }
 }

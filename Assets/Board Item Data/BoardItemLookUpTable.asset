@@ -30,11 +30,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _lookUpTable
       Entry: 7
-      Data: 0|UnityEngine.Rendering.SerializedDictionary`2[[Model.Interfaces.BoardItemSerializable,
-        Assembly-CSharp],[View.BoardItemViewProperties, Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+      Data: 0|System.Collections.Generic.Dictionary`2[[Model.BoardItemModels.BoardItemSerializable,
+        Assembly-CSharp],[View.Interfaces.IBoardItemViewProperties, Assembly-CSharp]],
+        mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Model.Interfaces.BoardItemSerializable,
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Model.BoardItemModels.BoardItemSerializable,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 8
@@ -57,6 +58,24 @@ MonoBehaviour:
     - Name: _eventPrefab
       Entry: 10
       Data: 2
+    - Name: _startingPosition
+      Entry: 7
+      Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 3.05
+    - Name: 
+      Entry: 4
+      Data: 0.35
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -75,6 +94,15 @@ MonoBehaviour:
     - Name: _boardPrefab
       Entry: 10
       Data: 4
+    - Name: _startingPosition
+      Entry: 7
+      Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -95,6 +123,15 @@ MonoBehaviour:
       Data: 6
     - Name: _detailsPrefab
       Entry: 6
+      Data: 
+    - Name: _startingPosition
+      Entry: 7
+      Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
