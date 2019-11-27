@@ -1,19 +1,24 @@
 using System;
 using System.Collections.Generic;
-using Sirenix.OdinInspector;
 using UnityEngine;
 using View.PrefabFactories;
 using View.PrefabFactories.FactoryData;
-using View.Scripts;
-using View.Scripts.MouseHandler;
+using View.Scripts.Identifiers;
 
 namespace View
 {
-    public class ViewHandler
+    [CreateAssetMenu(order = 3, fileName = "View Handler", menuName = "View Handler")]
+    public class ViewHandler: ScriptableObject
     {
-        private ViewHandlerData _viewHandlerData;
+        public delegate ViewIdentifierScript ViewInsertItemDelegate(Guid guid);
         
-        public ViewHandler(ViewHandlerData viewHandlerData)
+        private ViewHandlerData _viewHandlerData;
+
+        public event ViewInsertItemDelegate OnItemInsertRequest;
+
+        public ViewHandlerData ViewHandlerData => _viewHandlerData;
+        
+        public void InitializeViewHandler(ViewHandlerData viewHandlerData)
         {
             _viewHandlerData = viewHandlerData;
             
@@ -40,12 +45,15 @@ namespace View
             return ((T) _factories[typeof(T)]).CreateInstance(dataToUse);
         }
         
-        public void Update(float timescale)
+        public void UpdateViewHandler(float timescale)
         {
             _viewHandlerData.TimeController.UpdateInput(timescale);
         }
 
-
+        public ViewIdentifierScript InsertItemByGuid(Guid guid)
+        {
+            return OnItemInsertRequest?.Invoke(guid);
+        }
 
         [NonSerialized] 
         private Dictionary<Type, object> _factories;

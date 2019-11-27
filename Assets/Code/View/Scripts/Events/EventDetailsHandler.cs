@@ -19,17 +19,24 @@ namespace View.Scripts.Events
         [SerializeField]
         private string _gameEventMessage;
 
-        public void ShowDetailsForEvent(GameObject prefabToUse)
+        public void ShowDetailsForEvent(EventDetailsScript prefabToUse)
         {
             if (_currentScreenOpen == null)
             {
-                _currentScreenOpen = Instantiate(prefabToUse, _detailsRoot);
+                _currentScreenOpen = Instantiate(prefabToUse.gameObject, _detailsRoot);
+                _currentScreenOpen.GetComponent<EventDetailsScript>().Destroyed += ClearHandledEventDetailsOnDestroy;
+                
                 GameEventMessage.SendEvent(_gameEventMessage);
             }
             else
             {
                 Debug.LogError("Already have an event screen open");
             }
+        }
+
+        private void ClearHandledEventDetailsOnDestroy()
+        {
+            Destroy(_currentScreenOpen);
         }
     }
 }

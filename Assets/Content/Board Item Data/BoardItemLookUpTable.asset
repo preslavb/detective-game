@@ -18,7 +18,7 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846, type: 2}
     - {fileID: 2411552537073104587, guid: 1411c6cebfe36e24ab65169f5ea8e7a0, type: 3}
-    - {fileID: 4868047913850677397, guid: ec070e5f80121084b8671e1ee8d3e61a, type: 3}
+    - {fileID: 7747493731915485, guid: ec070e5f80121084b8671e1ee8d3e61a, type: 3}
     - {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
     - {fileID: 3859849264399934575, guid: c7fc3a563bda66f46a0d3a80d25007f6, type: 3}
     - {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba, type: 2}
@@ -55,7 +55,7 @@ MonoBehaviour:
     - Name: _viewIdentifierScript
       Entry: 10
       Data: 1
-    - Name: _eventPrefab
+    - Name: _eventDetailsPrefab
       Entry: 10
       Data: 2
     - Name: _startingPosition
@@ -98,7 +98,16 @@ MonoBehaviour:
       Entry: 7
       Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
     - Name: 
-      Entry: 6
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -4.55
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8

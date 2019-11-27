@@ -15,17 +15,20 @@ namespace Controller
     public class InstantiationController
     {
         private Dictionary<BoardItemSerializable, Guid> _modelViewPairs;
+        private Dictionary<Guid, ViewIdentifierScript> _guidView;
         private ViewHandler _viewHandler;
         private ViewHandlerData _viewHandlerData;
         private BoardItemIdentifierLookupTable _identifierLookupTable;
         
         public InstantiationController(
             Dictionary<BoardItemSerializable, Guid> modelViewPairs,
+            Dictionary<Guid, ViewIdentifierScript> guidView,
             ViewHandler viewHandler,
             ViewHandlerData viewHandlerData,
             BoardItemIdentifierLookupTable identifierLookupTable
         ){
             _modelViewPairs = modelViewPairs;
+            _guidView = guidView;
             _viewHandler = viewHandler;
             _viewHandlerData = viewHandlerData;
             _identifierLookupTable = identifierLookupTable;
@@ -49,8 +52,14 @@ namespace Controller
                 default:
                     throw new Exception("The switch statement does not cover all possible Board item types");
             }
-                
-            _modelViewPairs.Add(item, result.GetComponent<ViewIdentifierScript>().Guid);
+
+            var identifierScript = result.GetComponent<ViewIdentifierScript>();
+            
+            if (!_modelViewPairs.ContainsKey(item))
+                _modelViewPairs.Add(item, identifierScript.Guid);
+
+            if (!_guidView.ContainsKey(identifierScript.Guid))
+                _guidView.Add(identifierScript.Guid, identifierScript);
         }
 
         private void InstantiateEvent(Event @event, out GameObject result)

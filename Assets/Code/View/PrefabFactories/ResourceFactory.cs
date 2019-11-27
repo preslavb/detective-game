@@ -1,5 +1,6 @@
 using UnityEngine;
 using View.PrefabFactories.FactoryData;
+using View.Scripts.Identifiers;
 
 namespace View.PrefabFactories
 {
@@ -17,6 +18,8 @@ namespace View.PrefabFactories
         {
             // Instantiate the prefab
             var result = GameObject.Instantiate(factoryData.ViewData.ViewIdentifierScript.gameObject, ViewHandlerDataReference.FactoryRoot);
+
+            result.GetComponent<ViewIdentifierScript>().Guid = factoryData.ViewData.ViewIdentifierScript.Guid;
 
             // Translate the object if a starting position was given
             result.transform.Translate(new Vector3(factoryData.ViewData.StartingPosition?.x ?? 0, factoryData.ViewData.StartingPosition?.y ?? 0), ViewHandlerDataReference.FactoryRoot);

@@ -3,6 +3,7 @@ using _Extensions;
 using UnityEngine;
 using View.Scripts;
 using View.Scripts.Events;
+using View.Scripts.Identifiers;
 
 namespace View
 {
@@ -65,7 +66,7 @@ namespace View
             {
                 SlotScript slotElement = null;
                 
-                if (elements.Any(element => (slotElement = element.GetComponent<SlotScript>()) != null) && slotElement.Input(gameObject))
+                if (elements.Any(element => (slotElement = element.GetComponent<SlotScript>()) != null) && slotElement.Input(gameObject.GetComponent<ViewIdentifierScript>()))
                 {
                     Destroy(gameObject);
                 }

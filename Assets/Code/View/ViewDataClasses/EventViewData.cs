@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using View.Interfaces;
+using View.Scripts.Events;
 using View.Scripts.Identifiers;
 
 namespace View.ViewDataClasses
@@ -13,12 +14,12 @@ namespace View.ViewDataClasses
 
         [AssetsOnly] 
         [SerializeField] 
-        private GameObject _eventPrefab;
+        private EventDetailsScript _eventDetailsPrefab;
 
         [SerializeField] 
         private Vector2? _startingPosition;
 
-        public GameObject EventPrefab => _eventPrefab;
+        public EventDetailsScript EventDetailsPrefab => _eventDetailsPrefab;
         public Vector2? StartingPosition => _startingPosition;
         public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
     }

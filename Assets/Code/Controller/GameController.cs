@@ -22,7 +22,7 @@ namespace Controller
         private ModelSimulationData _modelSimulationData;
 
 
-        [TabGroup("View")] [ReadOnly] [ShowInInspector]
+        [TabGroup("View")] [SerializeField] [Required]
         private ViewHandler _viewHandler;
 
         [TabGroup("View")] [SerializeField] [Required]
@@ -35,20 +35,20 @@ namespace Controller
         private Dictionary<BoardItemSerializable, Guid> _modelViewGuids;
 
         [ReadOnly] [ShowInInspector]
-        private Dictionary<Guid, GameObject> _guidView;
+        private Dictionary<Guid, ViewIdentifierScript> _guidView;
         
         public void Start()
         {
             _modelViewGuids = new Dictionary<BoardItemSerializable, Guid>();
-            _guidView = new Dictionary<Guid, GameObject>();
+            _guidView = new Dictionary<Guid, ViewIdentifierScript>();
             
-            GuidHandler.SetUpGuids(_identifierLookupTable);
+            GuidHandler.SetUpGuids(_identifierLookupTable, _modelViewGuids);
             
             // Create the model
             _modelSimulation = new ModelSimulation(_modelSimulationData);
             
-            // Create the view handler
-            _viewHandler = new ViewHandler(_viewHandlerData);
+            // Initialize the view handler
+            _viewHandler.InitializeViewHandler(_viewHandlerData);
             
             // Set up the time controller
             _viewHandlerData.TimeController.ChangedTimescale +=
@@ -56,6 +56,7 @@ namespace Controller
             
             _instantiationController = new InstantiationController(
                 _modelViewGuids,
+                _guidView,
                 _viewHandler,
                 _viewHandlerData,
                 _identifierLookupTable
@@ -72,6 +73,19 @@ namespace Controller
             
             // Subscribe the game view actions
             _viewHandlerData.MouseHandler.DeductionModeClickHandler.OnCreatedAPair += scripts => _modelSimulation.PairResolver.Resolve(ConstructPair(scripts));
+            _viewHandler.OnItemInsertRequest += ViewHandlerOnItemInsertRequest;
+        }
+
+        private ViewIdentifierScript ViewHandlerOnItemInsertRequest(Guid guid)
+        {
+            // Get the board item model associated with this guid
+            var boardItem = _modelViewGuids.FirstOrDefault(x => x.Value == guid).Key;
+            
+            // Insert the item into the board model
+            _modelSimulation.InsertIntoBoard(boardItem);
+            
+            // Get the newly inserted item view
+            return _guidView[guid];
         }
 
         public void Update()
@@ -80,7 +94,7 @@ namespace Controller
             _modelSimulation.Update(Time.deltaTime);
             
             // Update the view
-            _viewHandler.Update(_modelSimulation.GameTime.TimeScale);
+            _viewHandler.UpdateViewHandler(_modelSimulation.GameTime.TimeScale);
         }
 
         private BoardItemPair ConstructPair(ViewIdentifierScript[] scripts)

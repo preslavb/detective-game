@@ -99,7 +99,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b5d6b2c1b5f4f268d01040d176054a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boardItemInSlot: {fileID: 0}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 5ed2a906f6a8dc3409f6260131d62913, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _viewHandlerReference
+      Entry: 10
+      Data: 0
+  _identifierPrefab: {fileID: 0}
   _canInput: 0
   _canOutput: 1
-  _eventDetailsScript: {fileID: 0}
