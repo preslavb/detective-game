@@ -6,6 +6,7 @@ namespace View.Scripts.Identifiers
     [RequireComponent(typeof(ClickHandlerScript))]
     public class ViewIdentifierScript: MonoBehaviour
     {
+        [NonSerialized]
         private bool _initialized;
         private Guid _guid;
 
@@ -19,6 +20,7 @@ namespace View.Scripts.Identifiers
                 return;
             }
 
+            _initialized = true;
             _guid = guid;
         }
     }

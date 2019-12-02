@@ -16,8 +16,9 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 324150398d4c96443b8ceafb3e157846, type: 2}
-    - {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
+    - {fileID: 11400000, guid: 986776de7228b2d4aa9acff6c8f9d03b, type: 2}
+    - {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba, type: 2}
+    - {fileID: 11400000, guid: c38e36ca550fad3489a0166b25d17a05, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -37,46 +38,25 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: Model.BoardItemPair, Assembly-CSharp
+    - Name: _firstItem
+      Entry: 10
+      Data: 0
+    - Name: _secondItem
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 10
       Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: Model.BoardItemPair, Assembly-CSharp
-    - Name: _firstItem
-      Entry: 10
-      Data: 0
-    - Name: _secondItem
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: Model.BoardItemPair, Assembly-CSharp
-    - Name: _firstItem
-      Entry: 10
-      Data: 1
-    - Name: _secondItem
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 10
-      Data: 1
     - Name: 
       Entry: 8
       Data: 

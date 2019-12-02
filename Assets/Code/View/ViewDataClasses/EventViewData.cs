@@ -25,8 +25,8 @@ namespace View.ViewDataClasses
         
         public void Initialize(Guid guid)
         {
-            _viewIdentifierScript.Initialize(guid);
-            _eventDetailsPrefab.Initialize(guid);
+            if (_viewIdentifierScript != null) _viewIdentifierScript.Initialize(guid);
+            if (_eventDetailsPrefab != null) _eventDetailsPrefab.Initialize(guid);
         }
 
         public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;

@@ -7,7 +7,10 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using View;
 using View.Scripts;
+using View.Scripts.Events;
 using View.Scripts.Identifiers;
+using View.ViewDataClasses;
+using Event = Model.BoardItemModels.Event;
 
 namespace Controller
 {
@@ -54,6 +57,9 @@ namespace Controller
             _viewHandlerData.TimeController.ChangedTimescale +=
                 timescale => _modelSimulation.GameTime.TimeScale = timescale;
             
+            // Set up event destruction callbacks
+            _viewHandlerData.EventDetailsHandler.EventCompleted += HandleEventCompletion;
+            
             _instantiationController = new InstantiationController(
                 _modelViewGuids,
                 _guidView,
@@ -70,6 +76,7 @@ namespace Controller
             
             // Subscribe to the model actions
             _modelSimulation.Board.DidInsertItem += _instantiationController.InstantiateItem;
+            _modelSimulation.Board.DidDeleteItem += _instantiationController.DestroyItem;
             
             // Subscribe the game view actions
             _viewHandlerData.MouseHandler.DeductionModeClickHandler.OnCreatedAPair += scripts => _modelSimulation.PairResolver.Resolve(ConstructPair(scripts));
@@ -95,6 +102,17 @@ namespace Controller
             
             // Update the view
             _viewHandler.UpdateViewHandler(_modelSimulation.GameTime.TimeScale);
+        }
+
+        private void HandleEventCompletion(EventDetailsScript eventCompleted)
+        {
+            // Find the associated event
+            Event @event = _modelViewGuids.FirstOrDefault(x => x.Value == eventCompleted.Guid).Key as Event;
+
+            if (@event != null && @event.DestroyOnCompletion)
+            {
+                _modelSimulation.RemoveFromBoard(@event);
+            }
         }
 
         private BoardItemPair ConstructPair(ViewIdentifierScript[] scripts)

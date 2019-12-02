@@ -26,6 +26,10 @@ namespace Model.BoardItemModels
         [InfoBox("If the player does not respond to the event, this will spawn.")]
         private BoardItemSerializable _defaultDecision;
 
+        [SerializeField] private bool _destroyOnCompletion;
+
+        public bool DestroyOnCompletion => _destroyOnCompletion;
+
         public int DecisionsCount => _eventDecisions.Length;
 
         public BoardItemSerializable[] EventDecisions => _eventDecisions;

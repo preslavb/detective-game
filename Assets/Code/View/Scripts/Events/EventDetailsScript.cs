@@ -15,6 +15,8 @@ namespace View.Scripts.Events
         
         private UIView _uiView;
 
+        public Guid Guid => _guid;
+        
         public void Initialize(Guid guid)
         {
             if (_initialized)

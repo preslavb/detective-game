@@ -93,5 +93,10 @@ namespace Controller
                 ViewData = (ResourceViewData) _identifierLookupTable[resource]
             });
         }
+
+        public void DestroyItem(BoardItemSerializable item)
+        {
+            GameObject.Destroy(_guidView[_modelViewPairs[item]].gameObject);
+        }
     }
 }

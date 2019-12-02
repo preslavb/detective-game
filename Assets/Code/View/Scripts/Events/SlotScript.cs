@@ -10,6 +10,8 @@ namespace View.Scripts.Events
     [RequireComponent(typeof(ClickHandlerScript))]
     public class SlotScript:SerializedMonoBehaviour
     {
+        public delegate bool GetExternalRequirementsDelegate(SlotScript slotScriptToCheck, ViewIdentifierScript scriptDropped); 
+        
         private ClickHandlerScript _clickHandlerScript;
 
         [OdinSerialize] private ViewHandler _viewHandlerReference;
@@ -22,9 +24,14 @@ namespace View.Scripts.Events
 
         public ViewIdentifierScript IdentifierPrefab => _identifierPrefab;
 
+        private Guid _currentItemInSlotGuid;
+
+        public Guid CurrentItemInSlotGuid => _currentItemInSlotGuid;
+
         private void Awake()
         {
             _clickHandlerScript = GetComponent<ClickHandlerScript>();
+            _currentItemInSlotGuid = _identifierPrefab != null ? _identifierPrefab.Guid : Guid.Empty;
         }
 
         private void Start()
@@ -34,10 +41,9 @@ namespace View.Scripts.Events
         
         public bool Input(ViewIdentifierScript dropped)
         {
-            if (_canInput)
+            if (_canInput && (GetExternalRequirements?.Invoke(this, dropped) ?? true))
             {
-                _identifierPrefab = dropped;
-                UpdateView(_identifierPrefab);
+                UpdateView(dropped);
 
                 DidChangeState?.Invoke();
                 
@@ -50,13 +56,13 @@ namespace View.Scripts.Events
         private void Output()
         {
             if (_viewHandlerReference == null) return;
-            if (_identifierPrefab == null) return;
+            if (_currentItemInSlotGuid == Guid.Empty) return;
             
-            var boardItemView = _viewHandlerReference.InsertItemByGuid(_identifierPrefab.Guid);
+            var boardItemView = _viewHandlerReference.InsertItemByGuid(_currentItemInSlotGuid);
 
             var boardItemClickHandler = boardItemView.GetComponent<ClickHandlerScript>();
 
-            _identifierPrefab = null;
+            _currentItemInSlotGuid = Guid.Empty;
 
             _viewHandlerReference.ViewHandlerData.MouseHandler.NormalClickHandler.SimulateHold(boardItemClickHandler);
             
@@ -72,6 +78,8 @@ namespace View.Scripts.Events
             var gameObjectCopy = Instantiate(dropped.GetComponentInChildren<Canvas>().gameObject, transform);
             var rectTrans = GetComponent<RectTransform>();
 
+            _currentItemInSlotGuid = dropped.Guid;
+
             gameObjectCopy.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, rectTrans.rect.width);
             gameObjectCopy.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, 0, rectTrans.rect.height);
         }
@@ -86,5 +94,6 @@ namespace View.Scripts.Events
         }
 
         public event Delegates.VoidDelegate DidChangeState;
+        public event GetExternalRequirementsDelegate GetExternalRequirements;
     }
 }
