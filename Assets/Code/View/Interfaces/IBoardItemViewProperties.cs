@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using View.Scripts.Identifiers;
 
@@ -6,6 +7,8 @@ namespace View.Interfaces
     public interface IBoardItemViewProperties
     {
         ViewIdentifierScript ViewIdentifierScript { get; }
-        Vector2? StartingPosition { get; } 
+        Vector2? StartingPosition { get; }
+
+        void Initialize(Guid guid);
     }
 }
