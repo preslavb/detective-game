@@ -6,6 +6,8 @@ namespace View.Scripts.Events
 {
     public class EventDetailsHandler: MonoBehaviour
     {
+        public delegate void EventCompletionDelegate(EventDetailsScript eventCompleted);
+        
         [SerializeField] 
         [SceneObjectsOnly]
         private Transform _detailsRoot;
@@ -14,7 +16,7 @@ namespace View.Scripts.Events
         [SceneObjectsOnly] 
         private Camera _mainCamera;
 
-        private GameObject _currentScreenOpen;
+        private EventDetailsScript _currentScreenOpen;
 
         [SerializeField]
         private string _gameEventMessage;
@@ -23,8 +25,12 @@ namespace View.Scripts.Events
         {
             if (_currentScreenOpen == null)
             {
-                _currentScreenOpen = Instantiate(prefabToUse.gameObject, _detailsRoot);
-                _currentScreenOpen.GetComponent<EventDetailsScript>().Destroyed += ClearHandledEventDetailsOnDestroy;
+                var currentScreenOpenGameObject = Instantiate(prefabToUse.gameObject, _detailsRoot);
+                
+                _currentScreenOpen = currentScreenOpenGameObject.GetComponent<EventDetailsScript>();
+                _currentScreenOpen.Initialize(prefabToUse.Guid);
+
+                _currentScreenOpen.Destroyed += OnEventCompleted;
                 
                 GameEventMessage.SendEvent(_gameEventMessage);
             }
@@ -34,9 +40,12 @@ namespace View.Scripts.Events
             }
         }
 
-        private void ClearHandledEventDetailsOnDestroy()
+        private void OnEventCompleted()
         {
+            EventCompleted?.Invoke(_currentScreenOpen);
             Destroy(_currentScreenOpen);
         }
+
+        public event EventCompletionDelegate EventCompleted;
     }
 }

@@ -26,3 +26,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba, type: 2}
   - {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
   _defaultDecision: {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
+  _destroyOnCompletion: 1

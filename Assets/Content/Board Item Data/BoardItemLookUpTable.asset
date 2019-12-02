@@ -22,13 +22,14 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
     - {fileID: 3859849264399934575, guid: c7fc3a563bda66f46a0d3a80d25007f6, type: 3}
     - {fileID: 11400000, guid: 3d8796859d045ab4199e07ba55713fba, type: 2}
-    - {fileID: 7820919323452428631, guid: 2f1f035d8ed550643b545185a65b9afc, type: 3}
+    - {fileID: 3571882969024799598, guid: d14b9f1d9a989a74dac3e59e80d10d86, type: 3}
     - {fileID: 11400000, guid: c38e36ca550fad3489a0166b25d17a05, type: 2}
     - {fileID: 2411552537073104587, guid: 859a9e3c0b15bfb4c936244d8e44d3da, type: 3}
-    - {fileID: 9076016023131532908, guid: 7cf19a261b189684da97e2b112450d26, type: 3}
     - {fileID: 11400000, guid: c0b178b2149a9354fbad3a75bf3d6fd3, type: 2}
     - {fileID: 2411552537073104587, guid: 3183ca8a9b7ef374296fb2b535ce7329, type: 3}
     - {fileID: 5233653445429568335, guid: f6d965d5616c9e448a7b9ddd8a4e2806, type: 3}
+    - {fileID: 11400000, guid: 986776de7228b2d4aa9acff6c8f9d03b, type: 2}
+    - {fileID: 9135529210090382220, guid: 5b31fe5e094a68f408e443681948bb8a, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -48,7 +49,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 5
+      Data: 6
     - Name: 
       Entry: 7
       Data: 
@@ -167,8 +168,8 @@ MonoBehaviour:
       Entry: 10
       Data: 8
     - Name: _eventDetailsPrefab
-      Entry: 10
-      Data: 9
+      Entry: 6
+      Data: 
     - Name: _startingPosition
       Entry: 7
       Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
@@ -189,16 +190,46 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 10
-      Data: 10
+      Data: 9
     - Name: $v
       Entry: 7
       Data: 6|View.ViewDataClasses.EventViewData, Assembly-CSharp
     - Name: _viewIdentifierScript
       Entry: 10
-      Data: 11
+      Data: 10
     - Name: _eventDetailsPrefab
       Entry: 10
+      Data: 11
+    - Name: _startingPosition
+      Entry: 7
+      Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
       Data: 12
+    - Name: $v
+      Entry: 7
+      Data: 7|View.ViewDataClasses.EvidenceViewData, Assembly-CSharp
+    - Name: _viewIdentifierScript
+      Entry: 10
+      Data: 13
+    - Name: _detailsPrefab
+      Entry: 6
+      Data: 
     - Name: _startingPosition
       Entry: 7
       Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib

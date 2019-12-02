@@ -2,10 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/Events/Just Another Commission.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/Events/Just Another Commission.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/Events/Meet Terry.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/Events/Meet Terry.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/PairResultLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/PairResultLookUpTable.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Master Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Master Graph.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIButton/_UIButtonDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIButton/_UIButtonDatabase.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_MeetTerry.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_MeetTerry.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Evidence/Evidence.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Evidence/Evidence.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Evidence/Test Evidence Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Evidence/Test Evidence Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Details.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/EndPageButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/EndPageButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Event Screen Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Event Screen Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Details.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Nody Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Nody Graph.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,23 +56,33 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/GuidHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/103DCB0F-CEC7-4625-B826-B8EE16F3E0B1/60/323fce8e/AssetModificationProcessor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Internal/BaseEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Delegates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/26A12AD1-F5B8-470C-9F06-26AE8224B9A6/6f/2ac5ed37/MouseEventBase`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/ITickable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Engine/Nody/Models/Graph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/103DCB0F-CEC7-4625-B826-B8EE16F3E0B1/1f/898ab72f/AssetDeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/d1/4d63a3dc/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/79/4639a6e9/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/98/a1ccc83f/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCB9DAC8-AE3A-4886-93B0-F4CD5B0DB0BE/9d/fb1d2a76/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/GameTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,19 +90,29 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowUpdateCursorIcon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/Scripts/SlotControllerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowOpen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59837000-EBF5-4955-A9CB-1D31CAA86097/85/85afe73e/GUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ClickHandlerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Windows/DoozyWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventCooldownScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDecisionScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowEditorSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViews.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViewGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,8 +122,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/ModelSimulationData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDetectKeys.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/GUI/Scripts/DGUI/Properties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IEventDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IBoardItem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,57 +133,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/test.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/PrefabFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/ITickable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/GameTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/Board.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemPrefabLookupTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulationData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EventFactoryData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/Scripts/SlotControllerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventCooldownScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierTag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViews.cs" />
+        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Internal/BaseEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViewGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindowLoadDesignData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowLoadDesignData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowRender.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/DesignDataInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/DesignDataAssetProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/DesignAssetPostProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventPageEndpointScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/GuidHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/GuidHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" />
       </list>
     </option>
   </component>
@@ -148,7 +201,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,10 +223,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="10372">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="556">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10372" />
+      <option name="pid" value="556" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -200,6 +253,13 @@
       <workItem from="1574758558612" duration="33838000" />
       <workItem from="1574796417692" duration="5084000" />
       <workItem from="1574894377886" duration="601000" />
+      <workItem from="1575058892079" duration="12941000" />
+      <workItem from="1575112587861" duration="771000" />
+      <workItem from="1575113372907" duration="115000" />
+      <workItem from="1575113502620" duration="179000" />
+      <workItem from="1575119433667" duration="2061000" />
+      <workItem from="1575130758941" duration="2984000" />
+      <workItem from="1575279721395" duration="11560000" />
     </task>
     <servers />
   </component>
@@ -244,7 +304,25 @@
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs</url>
+          <line>81</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" initialLine="81">
+            <startOffsets>
+              <option value="2552" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2601" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <reveal-manager>
+      <revealed-members>
+        <RevealItemInfo typeName="System.Collections.Generic.KeyValuePair`2[[Model.BoardItemModels.BoardItemSerializable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" fieldName="Value" />
+      </revealed-members>
+    </reveal-manager>
   </component>
 </project>

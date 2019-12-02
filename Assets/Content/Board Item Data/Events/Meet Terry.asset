@@ -24,3 +24,4 @@ MonoBehaviour:
   _expirationTime: 0
   _eventDecisions: []
   _defaultDecision: {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
+  _destroyOnCompletion: 1

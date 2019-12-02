@@ -9,7 +9,24 @@ namespace View.Scripts.Events
     [RequireComponent(typeof(UIView))]
     public class EventDetailsScript: MonoBehaviour
     {
+        private bool _initialized;
+        
+        private Guid _guid;
+        
         private UIView _uiView;
+
+        public Guid Guid => _guid;
+        
+        public void Initialize(Guid guid)
+        {
+            if (_initialized)
+            {
+                Debug.LogError("Object already initialized. Make sure this is always only called once for an object", this);
+                return;
+            }
+
+            _guid = guid;
+        }
 
         private void Awake()
         {

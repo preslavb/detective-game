@@ -1,3 +1,4 @@
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using View.Interfaces;
@@ -16,5 +17,10 @@ namespace View.ViewDataClasses
 
         public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
         public Vector2? StartingPosition => _startingPosition;
+        
+        public void Initialize(Guid guid)
+        {
+            _viewIdentifierScript.Initialize(guid);
+        }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using View.Interfaces;
@@ -21,6 +22,13 @@ namespace View.ViewDataClasses
 
         public EventDetailsScript EventDetailsPrefab => _eventDetailsPrefab;
         public Vector2? StartingPosition => _startingPosition;
+        
+        public void Initialize(Guid guid)
+        {
+            if (_viewIdentifierScript != null) _viewIdentifierScript.Initialize(guid);
+            if (_eventDetailsPrefab != null) _eventDetailsPrefab.Initialize(guid);
+        }
+
         public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
     }
 }

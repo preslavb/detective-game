@@ -36,6 +36,11 @@ namespace Model
             _board.InsertItem(item);
         }
 
+        public void RemoveFromBoard(BoardItemSerializable item)
+        {
+            _board.DeleteItem(item);
+        }
+
         public void Update(float deltaTime)
         {
             _gameTime.Tick(deltaTime);

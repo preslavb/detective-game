@@ -19,7 +19,7 @@ namespace View.PrefabFactories
             // Instantiate the prefab
             var result = GameObject.Instantiate(factoryData.ViewData.ViewIdentifierScript.gameObject, ViewHandlerDataReference.FactoryRoot);
 
-            result.GetComponent<ViewIdentifierScript>().Guid = factoryData.ViewData.ViewIdentifierScript.Guid;
+            result.GetComponent<ViewIdentifierScript>().Initialize(factoryData.ViewData.ViewIdentifierScript.Guid);
 
             // Translate the object if a starting position was given
             result.transform.Translate(new Vector3(factoryData.ViewData.StartingPosition?.x ?? 0, factoryData.ViewData.StartingPosition?.y ?? 0), ViewHandlerDataReference.FactoryRoot);

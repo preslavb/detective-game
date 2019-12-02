@@ -70,7 +70,8 @@
                 <e p="EventDecisionScript.cs" t="Include" />
                 <e p="EventDetailsHandler.cs" t="Include" />
                 <e p="EventDetailsScript.cs" t="Include" />
-                <e p="EventPageEndpointScript.cs" t="Include" />
+                <e p="SlotRequirementFilter.cs" t="Include" />
+                <e p="SlotRequirementScript.cs" t="Include" />
                 <e p="SlotScript.cs" t="Include" />
               </e>
               <e p="Evidence" t="Include">
@@ -902,6 +903,9 @@
         </e>
         <e p="Font" t="Include">
           <e p="fontawesome-free-5.11.2-desktop" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+          </e>
+          <e p="Special_Elite" t="Include">
             <e p="LICENSE.txt" t="Include" />
           </e>
         </e>

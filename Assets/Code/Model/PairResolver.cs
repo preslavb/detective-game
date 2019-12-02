@@ -16,10 +16,13 @@ namespace Model
         {
             _modelSimulationReference.ModelSimulationDataReference.PairResults.Dictionary.TryGetValue(boardItemPair, out var result);
 
-            if (result == null) return false;
+            if ((result?.Length ?? 0) == 0) return false;
             
-            // Add the item to the model
-            _modelSimulationReference.InsertIntoBoard(result);
+            // Add the items to the model
+            foreach (var boardItemSerializable in result)
+            {
+                _modelSimulationReference.InsertIntoBoard(boardItemSerializable);
+            }
 
             return true;
         }

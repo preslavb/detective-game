@@ -11,7 +11,6 @@ namespace _Extensions
         {
             RaycastHit raycastResult;
             List<RaycastResult> raycastResults = new List<RaycastResult>();
-            GraphicRaycaster gr = GameObject.FindObjectOfType<GraphicRaycaster>();
             
             if (includeUI)
             {

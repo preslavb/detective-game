@@ -12,7 +12,7 @@ namespace Controller
             {
                 var newGuid = Guid.NewGuid();
 
-                keyValuePair.Value.ViewIdentifierScript.Guid = newGuid;
+                keyValuePair.Value.Initialize(newGuid);
 
                 if (!boardItemGuids.ContainsKey(keyValuePair.Key))
                     boardItemGuids.Add(keyValuePair.Key, newGuid);
