@@ -28,14 +28,14 @@ namespace Doozy.Editor.Nody.Windows
             var graphArea = new Rect(0, 0, position.width, position.height);
             GraphBackground.DrawGrid(graphArea, CurrentZoom, CurrentPanOffset);
 
-            m_graphAreaIncludingTab = new Rect(0, DGUI.Properties.StandardWindowTabHeight, position.width, position.height);
+            m_graphAreaIncludingTab = new Rect(0, m_isEmbeddedWindow ? 0f : DGUI.Properties.StandardWindowTabHeight, position.width, position.height);
             m_scaledGraphArea = new Rect(0,
                                          0,
                                          graphArea.width / CurrentZoom,
                                          graphArea.height / CurrentZoom);
 
             Matrix4x4 initialMatrix = GUI.matrix; //save initial matrix
-            GUI.EndClip();
+            if (!m_isEmbeddedWindow) GUI.EndClip();
             GUI.BeginClip(new Rect(m_graphAreaIncludingTab.position, m_scaledGraphArea.size));
             {
                 Matrix4x4 translation = Matrix4x4.TRS(m_graphAreaIncludingTab.position, Quaternion.identity, Vector3.one);
@@ -65,6 +65,7 @@ namespace Doozy.Editor.Nody.Windows
 
             HandleZoom();
             HandlePanning();
+            if (m_isEmbeddedWindow) GUI.EndClip();
 
 
             if (current.mousePosition.x > ToolbarWidth &&

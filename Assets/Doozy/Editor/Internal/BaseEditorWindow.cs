@@ -48,6 +48,8 @@ namespace Doozy.Editor.Internal
         #region Private Variables
 
         private readonly Dictionary<string, AnimBool> m_animBools = new Dictionary<string, AnimBool>();
+        
+        protected bool m_isEmbeddedWindow = false;
 
         #endregion
 
@@ -67,7 +69,7 @@ namespace Doozy.Editor.Internal
         protected virtual void OnLostFocus() { HasFocus = false; }
 
         /// <summary> Called when object becomes disabled and inactive </summary>
-        protected virtual void OnDisable() { HasFocus = false; }
+        protected virtual void OnDisable() { HasFocus = false; m_isEmbeddedWindow = false;}
 
         /// <summary> Called when EditorWindow is closed </summary>
         protected virtual void OnDestroy() { }
