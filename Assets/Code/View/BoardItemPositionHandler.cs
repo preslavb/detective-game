@@ -1,6 +1,7 @@
 using System.Linq;
 using _Extensions;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using View.Scripts;
 using View.Scripts.Events;
 using View.Scripts.Identifiers;
@@ -14,7 +15,7 @@ namespace View
         private Camera _camera;
         private Transform _board;
         
-        private static float _boardOffset = -0.115f;
+        private static float _boardOffset = -0.015f;
         
         private ClickHandlerScript _clickHandlerScript;
 
@@ -44,7 +45,9 @@ namespace View
             _moveWithMouse = true;
             _startPosition = transform.position;
             
+            _boardOffset = -0.215f;
             Update();
+
             
             // Bring the canvas forward
             GetComponentInChildren<Canvas>().sortingOrder = 100;
@@ -54,6 +57,9 @@ namespace View
         {
             transform.position = _startPosition;
             _moveWithMouse = false;
+
+            _boardOffset = -0.015f;
+            Update();
             
             // Bring the canvas forward
             GetComponentInChildren<Canvas>().sortingOrder = 0;
@@ -71,6 +77,9 @@ namespace View
                     Destroy(gameObject);
                 }
             }
+
+            _boardOffset = -0.015f;
+            Update();
             
             _moveWithMouse = false;
                 

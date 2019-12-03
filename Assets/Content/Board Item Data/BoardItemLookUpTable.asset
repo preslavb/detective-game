@@ -31,6 +31,8 @@ MonoBehaviour:
     - {fileID: 5233653445429568335, guid: f6d965d5616c9e448a7b9ddd8a4e2806, type: 3}
     - {fileID: 11400000, guid: 986776de7228b2d4aa9acff6c8f9d03b, type: 2}
     - {fileID: 9135529210090382220, guid: 5b31fe5e094a68f408e443681948bb8a, type: 3}
+    - {fileID: 11400000, guid: 82744d868e8eaf740ad475f28ba9c5b3, type: 2}
+    - {fileID: 8206667701844157477, guid: 15b17ee0b599e32419a391375da5d44a, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -50,7 +52,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 6
+      Data: 7
     - Name: 
       Entry: 7
       Data: 
@@ -236,6 +238,42 @@ MonoBehaviour:
       Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
     - Name: 
       Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 15
+    - Name: $v
+      Entry: 7
+      Data: 8|View.ViewDataClasses.ResourceViewData, Assembly-CSharp
+    - Name: _viewIdentifierScript
+      Entry: 10
+      Data: 16
+    - Name: _startingPosition
+      Entry: 7
+      Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1.43
+    - Name: 
+      Entry: 4
+      Data: -0.16
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8

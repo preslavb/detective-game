@@ -6,11 +6,13 @@ namespace View.Scripts.MouseHandler
     public class MouseHandler : MonoBehaviour
     {
         [SerializeField] private Camera _camera;
-        
+        [SerializeField] private LineRenderer _lineRendererPrefab;
+
         public NormalClickHandler NormalClickHandler { get; }
-        public DeductionModeClickHandler DeductionModeClickHandler { get; }
+        public DeductionModeClickHandler DeductionModeClickHandler { get; private set; }
 
         private IClickHandler _clickHandler;
+
 
         public IClickHandler ClickHandler
         {
@@ -31,8 +33,12 @@ namespace View.Scripts.MouseHandler
         public MouseHandler()
         {
             NormalClickHandler = new NormalClickHandler(this);
-            DeductionModeClickHandler = new DeductionModeClickHandler(this);
             _clickHandler = NormalClickHandler;
+        }
+
+        private void Awake()
+        {
+            DeductionModeClickHandler = new DeductionModeClickHandler(this, _lineRendererPrefab);
         }
 
         void Update()

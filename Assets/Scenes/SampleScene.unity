@@ -1109,6 +1109,7 @@ GameObject:
   - component: {fileID: 247098278}
   - component: {fileID: 247098281}
   - component: {fileID: 247098280}
+  - component: {fileID: 247098279}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -1130,6 +1131,19 @@ Transform:
   m_Father: {fileID: 1725119022}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!65 &247098279
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247098277}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 0.0000021888354, z: 10.000001}
+  m_Center: {x: 0, y: 0, z: -0.0000019073486}
 --- !u!23 &247098280
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3790,6 +3804,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 1727748004}
+  _lineRendererPrefab: {fileID: 3490111442451061802, guid: f43805ee87305d4478526b8ebe58b7e1,
+    type: 3}
 --- !u!114 &1064183866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4650,6 +4666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GN - Office Room Furniture + Stuff
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 95c548754e394704eb7b4ec35018ceed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 95c548754e394704eb7b4ec35018ceed,
         type: 3}

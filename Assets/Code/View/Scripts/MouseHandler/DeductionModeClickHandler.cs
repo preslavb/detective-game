@@ -11,7 +11,11 @@ namespace View.Scripts.MouseHandler
     {
         private ViewIdentifierScript[] _boardItemPair = new ViewIdentifierScript[2];
 
+        public LineRenderer _lineRendererPrefab;
+
         public delegate void BoardItemPairDelegate(ViewIdentifierScript[] boardItemScripts);
+
+        private LineRenderer _lineRender;
         
         public event BoardItemPairDelegate OnCreatedAPair; 
         
@@ -28,6 +32,10 @@ namespace View.Scripts.MouseHandler
 
         public override IClickHandler HandleClicks(Camera camera)
         {
+            if (_boardItemPair[0] != null)
+            {
+                _lineRender.SetPosition(1, camera.GetPointBeneathMouse());
+            }
 
             if (Input.GetMouseButtonDown(0))
             {
@@ -44,6 +52,7 @@ namespace View.Scripts.MouseHandler
             if (Input.GetMouseButtonUp(1))
             {
                 // TODO: Clear all pins 
+                GameObject.Destroy(_lineRender.gameObject);
                 
                 return _mouseHandlerReference.NormalClickHandler;
             }
@@ -57,6 +66,13 @@ namespace View.Scripts.MouseHandler
             {
                 if (_boardItemPair[0] == null)
                 {
+                    _lineRender = GameObject.Instantiate(_lineRendererPrefab);
+
+                    _lineRender.positionCount = 2;
+                    _lineRender.useWorldSpace = true;
+                    _lineRender.SetPosition(0, viewIdentifierScript.transform.position);
+                    _lineRender.SetPosition(1, viewIdentifierScript.transform.position);
+                    
                     _boardItemPair[0] = viewIdentifierScript;
                     return true;
                 }
@@ -88,8 +104,9 @@ namespace View.Scripts.MouseHandler
             _boardItemPair[1] = null;
         }
 
-        public DeductionModeClickHandler(MouseHandler mouseHandler) : base(mouseHandler)
+        public DeductionModeClickHandler(MouseHandler mouseHandler, LineRenderer lineRendererPrefab) : base(mouseHandler)
         {
+            _lineRendererPrefab = lineRendererPrefab;
         }
     }
 }

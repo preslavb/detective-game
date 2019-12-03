@@ -7,6 +7,16 @@ namespace _Extensions
 {
     public static class Extensions
     {
+        public static Vector3 GetPointBeneathMouse(this Camera camera)
+        {
+            if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out var raycastResult, 30))
+            {
+                return raycastResult.point;
+            }
+
+            return Vector3.zero;
+        }
+        
         public static bool GetElementBeneathMouse(this Camera camera, out GameObject[] results, bool includeUI = false)
         {
             RaycastHit raycastResult;

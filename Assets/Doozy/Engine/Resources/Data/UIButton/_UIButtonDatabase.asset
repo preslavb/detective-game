@@ -19,8 +19,10 @@ MonoBehaviour:
   - General
   - Just Another Commission
   - Meet Terry
+  - Investigate Companies
   Categories:
   - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
   - {fileID: 11400000, guid: 4ad56db555cff9e46b474b0cfc6bedd2, type: 2}
   - {fileID: 11400000, guid: 8079cb82907c7324d8ddaf3601e6b684, type: 2}
   - {fileID: 11400000, guid: 692a5f7bb2827e64d91bc1866ce51725, type: 2}
+  - {fileID: 11400000, guid: dbcf27c957e8c6944a6568e1358803cd, type: 2}
