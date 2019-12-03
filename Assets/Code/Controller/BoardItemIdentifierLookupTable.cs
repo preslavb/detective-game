@@ -12,7 +12,7 @@ namespace Controller
     {
         public Dictionary<BoardItemSerializable, IBoardItemViewProperties> LookUpTable => _lookUpTable;
 
-        [OdinSerialize]
+        [SerializeField]
         private Dictionary<BoardItemSerializable, IBoardItemViewProperties> _lookUpTable;
         
         public IBoardItemViewProperties this[BoardItemSerializable key] => _lookUpTable[key];

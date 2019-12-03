@@ -13,12 +13,22 @@ namespace Editor
 
             if (designAsset != null)
             {
-                // Custom Delete
-                Debug.Log("Custom Delete Goes Here");
+                CleanDesignAssetData(designAsset);
+                
                 return AssetDeleteResult.DidNotDelete;
             }
 
             return AssetDeleteResult.DidNotDelete;
+        }
+
+        public static void CleanDesignAssetData(DesignDataScriptableObject designData) 
+        {
+            if (designData.DataType == DesignDataScriptableObject.DesignDataType.Event)
+            {
+                // Find the event screen folder
+                FileUtil.DeleteFileOrDirectory($"Assets/Prefabs/Event Screens/{designData.name}");
+                FileUtil.DeleteFileOrDirectory($"Assets/Prefabs/Board Representations/Events/{designData.name} Prefab.prefab");
+            }
         }
     }
 }

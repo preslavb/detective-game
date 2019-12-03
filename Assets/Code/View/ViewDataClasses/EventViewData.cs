@@ -7,6 +7,7 @@ using View.Scripts.Identifiers;
 
 namespace View.ViewDataClasses
 {
+    [Serializable]
     public class EventViewData: IBoardItemViewProperties
     {
         [AssetsOnly]
@@ -22,6 +23,13 @@ namespace View.ViewDataClasses
 
         public EventDetailsScript EventDetailsPrefab => _eventDetailsPrefab;
         public Vector2? StartingPosition => _startingPosition;
+
+        public EventViewData(ViewIdentifierScript viewIdentifierScript, EventDetailsScript eventDetailsPrefab, Vector2? startingPosition)
+        {
+            _viewIdentifierScript = viewIdentifierScript;
+            _eventDetailsPrefab = eventDetailsPrefab;
+            _startingPosition = startingPosition;
+        }
         
         public void Initialize(Guid guid)
         {

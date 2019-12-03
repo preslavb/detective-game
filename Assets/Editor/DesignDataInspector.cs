@@ -33,9 +33,6 @@ namespace Editor
                 text = "Open in editor window"
             });
             
-            IMGUIContainer defaultInspector = new IMGUIContainer(() => DrawDefaultInspector());
-            _rootElement.Add(defaultInspector);
-            
             return _rootElement;
         }
     }

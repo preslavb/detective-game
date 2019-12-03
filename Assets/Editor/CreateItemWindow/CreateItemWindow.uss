@@ -1,0 +1,12 @@
+.root {
+    padding: 20px;
+    overflow: visible;
+}
+
+.nody-window-label {
+    margin-top: 10px;
+}
+
+.property-container {
+    width: 50%;
+}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a55ff4cf0c47842a1785f947025b95, type: 3}
+  m_Name: New Design Data
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 3798111675663533676, guid: 521fb2ebcabe3ce4cb2834163dce5279, type: 3}
+    - {fileID: 7274873687944473297, guid: 9b816a81251ab894e878b77a3ea747ad, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _dataType
+      Entry: 3
+      Data: 0
+    - Name: ViewProperties
+      Entry: 7
+      Data: 0|View.ViewDataClasses.EventViewData, Assembly-CSharp
+    - Name: _viewIdentifierScript
+      Entry: 10
+      Data: 0
+    - Name: _eventDetailsPrefab
+      Entry: 10
+      Data: 1
+    - Name: _startingPosition
+      Entry: 7
+      Data: System.Nullable`1[[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  EventGraph: {fileID: 11400000, guid: 5a4a26b333a7b0546bb5a59b55504f39, type: 2}

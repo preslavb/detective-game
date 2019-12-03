@@ -19,6 +19,12 @@
             </e>
           </e>
           <e p="Delegates.cs" t="Include" />
+          <e p="DesignData" t="Include">
+            <e p="DesignDataScriptableObject.cs" t="Include" />
+            <e p="DesignDataScriptableObjectEditorOnly.cs" t="Include" />
+            <e p="DesignDataScriptableObjectEventData.cs" t="Include" />
+            <e p="DesignDataScriptableObjectOnCreate.cs" t="Include" />
+          </e>
           <e p="Model" t="Include">
             <e p="Board.cs" t="Include" />
             <e p="BoardItemModels" t="Include">
@@ -900,6 +906,20 @@
             </e>
           </e>
           <e p="readme.txt" t="Include" />
+        </e>
+        <e p="Editor" t="Include">
+          <e p="CreateitemWindow" t="Include">
+            <e p="CreateItemNoneSelected" t="Include">
+              <e p="CreateItemWindow.uss" t="Include" />
+              <e p="CreateItemWindow.uxml" t="Include" />
+            </e>
+            <e p="CreateItemWindow.cs" t="Include" />
+            <e p="CreateItemWindow.uss" t="Include" />
+            <e p="CreateItemWindowFactory.cs" t="Include" />
+            <e p="CreateItemWindowRender.cs" t="Include" />
+          </e>
+          <e p="DesignAssetPostProcessor.cs" t="Include" />
+          <e p="DesignDataInspector.cs" t="Include" />
         </e>
         <e p="Font" t="Include">
           <e p="fontawesome-free-5.11.2-desktop" t="Include">

@@ -6,6 +6,7 @@ using View.Scripts.Identifiers;
 
 namespace View.ViewDataClasses
 {
+    [Serializable]
     public class EvidenceViewData : IBoardItemViewProperties
     {
         [AssetsOnly]
