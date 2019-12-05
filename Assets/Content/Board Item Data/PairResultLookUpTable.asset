@@ -44,19 +44,22 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: Model.BoardItemPair, Assembly-CSharp
+      Data: 2|Model.BoardItemPair, Assembly-CSharp
     - Name: _firstItem
       Entry: 10
       Data: 0
     - Name: _secondItem
       Entry: 10
       Data: 1
+    - Name: _isUnique
+      Entry: 5
+      Data: true
     - Name: 
       Entry: 8
       Data: 
     - Name: $v
       Entry: 7
-      Data: 2|Model.BoardItemModels.BoardItemSerializable[], Assembly-CSharp
+      Data: 3|Model.BoardItemModels.BoardItemSerializable[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Model.BoardItemModels;
 
 namespace Model
@@ -17,6 +18,9 @@ namespace Model
             _modelSimulationReference.ModelSimulationDataReference.PairResults.Dictionary.TryGetValue(boardItemPair, out var result);
 
             if ((result?.Length ?? 0) == 0) return false;
+
+            _modelSimulationReference.ModelSimulationDataReference.PairResults.Dictionary.FirstOrDefault(pair =>
+                pair.Key.Equals(boardItemPair)).Key.HasBeenInstantiated = true;
             
             // Add the items to the model
             foreach (var boardItemSerializable in result)

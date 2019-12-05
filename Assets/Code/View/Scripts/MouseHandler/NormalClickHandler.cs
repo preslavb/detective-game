@@ -38,7 +38,7 @@ namespace View.Scripts.MouseHandler
                 ClickHandlerScript clickHandlerScript = null;
                 
                 if (camera.GetElementBeneathMouse(out var results, true) && 
-                    results.Any(go => (clickHandlerScript = go.GetComponent<ClickHandlerScript>()) != null ) &&
+                    results.Any(result => (clickHandlerScript = result.gameObject.GetComponent<ClickHandlerScript>()) != null ) &&
                     clickHandlerScript != null
                 ) {
                     _currentlyHandled = clickHandlerScript;

@@ -3,38 +3,40 @@ using _Extensions;
 using Boo.Lang.Runtime;
 using Model.Interfaces;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using View.Scripts.Identifiers;
 
 namespace View.Scripts.MouseHandler
 {
     public class DeductionModeClickHandler: ClickHandler
     {
+        private const float YarnOffset = 0.3f;
+        
         private ViewIdentifierScript[] _boardItemPair = new ViewIdentifierScript[2];
 
-        public LineRenderer _lineRendererPrefab;
+        public YarnControllerScript _yarnControllerPrefab;
 
-        public delegate void BoardItemPairDelegate(ViewIdentifierScript[] boardItemScripts);
+        public delegate bool BoardItemPairDelegate(ViewIdentifierScript[] boardItemScripts);
 
-        private LineRenderer _lineRender;
+        private YarnControllerScript _yarnController;
         
         public event BoardItemPairDelegate OnCreatedAPair; 
         
         public override void Entered()
         {
-            Debug.Log("Entered Deduction");
         }
 
         public override void Escaped()
         {
             ClearBoardItemPair();
-            Debug.Log("Exited Deduction");
         }
 
         public override IClickHandler HandleClicks(Camera camera)
         {
             if (_boardItemPair[0] != null)
             {
-                _lineRender.SetPosition(1, camera.GetPointBeneathMouse());
+                var mouseHit = camera.GetPointBeneathMouse();
+                _yarnController.LineRenderer.SetPosition(1, mouseHit.point + (mouseHit.normal * YarnOffset));
             }
 
             if (Input.GetMouseButtonDown(0))
@@ -42,9 +44,9 @@ namespace View.Scripts.MouseHandler
                 // Get the object below the mouse
                 camera.GetElementBeneathMouse(out var results);
 
-                foreach (var gameObject in results)
+                foreach (var result in results)
                 {
-                    if (HandleObjectClicked(gameObject)) return this;
+                    if (HandleObjectClicked(result)) return this;
                 }
             }
             
@@ -52,7 +54,7 @@ namespace View.Scripts.MouseHandler
             if (Input.GetMouseButtonUp(1))
             {
                 // TODO: Clear all pins 
-                GameObject.Destroy(_lineRender.gameObject);
+                GameObject.Destroy(_yarnController?.gameObject);
                 
                 return _mouseHandlerReference.NormalClickHandler;
             }
@@ -60,26 +62,41 @@ namespace View.Scripts.MouseHandler
             return this;
         }
 
-        private bool HandleObjectClicked(GameObject objectClicked)
+        private bool HandleObjectClicked(RaycastResult result)
         {
-            if (objectClicked.GetComponent<ViewIdentifierScript>() is var viewIdentifierScript && viewIdentifierScript != null)
+            if (result.gameObject.GetComponent<ViewIdentifierScript>() is var viewIdentifierScript && viewIdentifierScript != null)
             {
                 if (_boardItemPair[0] == null)
                 {
-                    _lineRender = GameObject.Instantiate(_lineRendererPrefab);
+                    _yarnController = GameObject.Instantiate(_yarnControllerPrefab);
 
-                    _lineRender.positionCount = 2;
-                    _lineRender.useWorldSpace = true;
-                    _lineRender.SetPosition(0, viewIdentifierScript.transform.position);
-                    _lineRender.SetPosition(1, viewIdentifierScript.transform.position);
+                    _yarnController.LineRenderer.positionCount = 2;
+                    _yarnController.LineRenderer.useWorldSpace = true;
+
+                    var newObject = GameObject.Instantiate(new GameObject(), result.gameObject.transform);
+                    newObject.transform.position = result.worldPosition + (result.worldNormal * YarnOffset);
+                    
+                    _yarnController.LineRenderer.SetPosition(0, newObject.transform.position);
+                    _yarnController.SetItem(0, newObject.transform);
                     
                     _boardItemPair[0] = viewIdentifierScript;
                     return true;
                 }
                 if (_boardItemPair[1] == null)
                 {
+                    var newObject = GameObject.Instantiate(new GameObject(), result.gameObject.transform);
+                    newObject.transform.position = result.worldPosition + (result.worldNormal * YarnOffset);
+                    
+                    _yarnController.SetItem(1, newObject.transform);
+                    
                     _boardItemPair[1] = viewIdentifierScript;
-                    NotifyPairCreation();
+
+                    if (!NotifyPairCreation())
+                    {
+                        GameObject.Destroy(_yarnController?.gameObject);
+                    }
+                    
+                    _yarnController = null;
                     return true;
                 }
                 
@@ -90,12 +107,14 @@ namespace View.Scripts.MouseHandler
             return false;
         }
 
-        private void NotifyPairCreation()
+        private bool NotifyPairCreation()
         {
             // DO the notification
-            OnCreatedAPair?.Invoke(_boardItemPair);
+            var result = OnCreatedAPair?.Invoke(_boardItemPair);
             
             ClearBoardItemPair();
+
+            return result ?? false;
         }
 
         private void ClearBoardItemPair()
@@ -104,9 +123,9 @@ namespace View.Scripts.MouseHandler
             _boardItemPair[1] = null;
         }
 
-        public DeductionModeClickHandler(MouseHandler mouseHandler, LineRenderer lineRendererPrefab) : base(mouseHandler)
+        public DeductionModeClickHandler(MouseHandler mouseHandler, YarnControllerScript yarnControllerPrefab) : base(mouseHandler)
         {
-            _lineRendererPrefab = lineRendererPrefab;
+            _yarnControllerPrefab = yarnControllerPrefab;
         }
     }
 }

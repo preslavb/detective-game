@@ -6,7 +6,7 @@ namespace View.Scripts.MouseHandler
     public class MouseHandler : MonoBehaviour
     {
         [SerializeField] private Camera _camera;
-        [SerializeField] private LineRenderer _lineRendererPrefab;
+        [SerializeField] private YarnControllerScript _lineRendererPrefab;
 
         public NormalClickHandler NormalClickHandler { get; }
         public DeductionModeClickHandler DeductionModeClickHandler { get; private set; }

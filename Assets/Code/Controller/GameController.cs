@@ -80,6 +80,7 @@ namespace Controller
             
             // Subscribe the game view actions
             _viewHandlerData.MouseHandler.DeductionModeClickHandler.OnCreatedAPair += scripts => _modelSimulation.PairResolver.Resolve(ConstructPair(scripts));
+            
             _viewHandler.OnItemInsertRequest += ViewHandlerOnItemInsertRequest;
         }
 

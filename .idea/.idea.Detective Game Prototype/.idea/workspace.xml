@@ -2,43 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectEditorOnly.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectEditorOnly.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectEventData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectEventData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/PairResultLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/PairResultLookUpTable.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DesignData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DesignData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DesignData.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Settings/DoozyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Settings/DoozyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemNoneSelected.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemNoneSelected.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemNoneSelected/CreateItemWindow.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemNoneSelected/CreateItemWindow.uss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemNoneSelected/CreateItemWindow.uss.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemNoneSelected/CreateItemWindow.uss.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemNoneSelected/CreateItemWindow.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemNoneSelected/CreateItemWindow.uxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemNoneSelected/CreateItemWindow.uxml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemNoneSelected/CreateItemWindow.uxml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowRender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowRender.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowRender.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowRender.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/DesignAssetPostProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/DesignAssetPostProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/DesignDataInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/DesignDataInspector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Investigate Companies/Investigate Companies Nody Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Investigate Companies/Investigate Companies Nody Graph.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Nody Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Nody Graph.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LineRendererPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LineRendererPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Editor/PostProcessing/CinemachineVolumeSettingsEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/DesignAssetPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,6 +68,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/103DCB0F-CEC7-4625-B826-B8EE16F3E0B1/1f/898ab72f/AssetDeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectEventData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/PostProcessing/CinemachineVolumeSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Board.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/d1/4d63a3dc/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/79/4639a6e9/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -126,6 +116,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViewGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FB38736-02AD-4F16-A30D-E8CE8E1A6F6D/71/917db1c6/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -144,14 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/Scripts/SlotControllerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventCooldownScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierTag.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViews.cs" />
         <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Internal/BaseEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViewGraph.cs" />
@@ -168,16 +151,13 @@
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/PairResultLookupTable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" />
@@ -195,6 +175,17 @@
         <option value="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowRender.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/PostProcessing/CinemachineVolumeSettings.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Editor/PostProcessing/CinemachineVolumeSettingsEditor.cs" />
       </list>
     </option>
   </component>
@@ -234,10 +225,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="22508">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="47432">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22508" />
+      <option name="pid" value="47432" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -272,6 +263,8 @@
       <workItem from="1575130758941" duration="2984000" />
       <workItem from="1575279721395" duration="11560000" />
       <workItem from="1575314637778" duration="11894000" />
+      <workItem from="1575458281626" duration="5956000" />
+      <workItem from="1575550332845" duration="770000" />
     </task>
     <servers />
   </component>
@@ -347,13 +340,39 @@
           <line>111</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowRender.cs" initialLine="109">
             <startOffsets>
-              <option value="4689" />
+              <option value="-1" />
             </startOffsets>
             <endOffsets>
-              <option value="4689" />
+              <option value="-1" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs</url>
+          <line>95</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" initialLine="95">
+            <startOffsets>
+              <option value="3442" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3490" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs</url>
+          <line>91</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" initialLine="91">
+            <startOffsets>
+              <option value="3306" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3347" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

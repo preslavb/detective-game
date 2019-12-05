@@ -72,7 +72,7 @@ namespace View
             {
                 SlotScript slotElement = null;
                 
-                if (elements.Any(element => (slotElement = element.GetComponent<SlotScript>()) != null) && slotElement.Input(gameObject.GetComponent<ViewIdentifierScript>()))
+                if (elements.Any(result => (slotElement = result.gameObject.GetComponent<SlotScript>()) != null) && slotElement.Input(gameObject.GetComponent<ViewIdentifierScript>()))
                 {
                     Destroy(gameObject);
                 }

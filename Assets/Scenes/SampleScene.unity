@@ -3804,7 +3804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 1727748004}
-  _lineRendererPrefab: {fileID: 3490111442451061802, guid: f43805ee87305d4478526b8ebe58b7e1,
+  _lineRendererPrefab: {fileID: -4954650957458031318, guid: f43805ee87305d4478526b8ebe58b7e1,
     type: 3}
 --- !u!114 &1064183866
 MonoBehaviour:
