@@ -31,7 +31,8 @@ namespace View
 
         private void Update()
         {
-            transform.position = _camera.transform.position;
+            if (CinemachineCore.Instance.IsLive(_virtualCamera) && !CinemachineCore.Instance.GetActiveBrain(0).IsBlending)
+                transform.position = _camera.transform.position;
             
             if (Input.GetMouseButtonDown(2))
             {
