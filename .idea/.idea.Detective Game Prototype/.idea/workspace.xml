@@ -2,27 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/45204633-corkboard-texture-background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/45204633-corkboard-texture-background.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/PairResultLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/PairResultLookUpTable.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DesignData.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LineRendererPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LineRendererPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/OdinSerializer/AOT/Ludiq.OdinSerializer.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/OdinSerializer/AOT/Ludiq.OdinSerializer.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
@@ -45,7 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindowFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/IClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Editor/PostProcessing/CinemachineVolumeSettingsEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Editor/PostProcessing/CinemachineVolumeSettingsEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Resource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/DesignAssetPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,6 +72,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/98/a1ccc83f/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Beginning Video/NewUnlitShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCB9DAC8-AE3A-4886-93B0-F4CD5B0DB0BE/9d/fb1d2a76/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Evidence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -119,6 +116,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FB38736-02AD-4F16-A30D-E8CE8E1A6F6D/71/917db1c6/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/NormalClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/IFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/SplashScreenController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/EventDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" root0="FORCE_HIGHLIGHTING" />
@@ -135,8 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Internal/BaseEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViewGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindowLoadDesignData.cs" />
@@ -170,7 +166,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EventViewData.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.uss" />
-        <option value="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/DesignAssetPostProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindow/CreateItemWindow.cs" />
@@ -183,9 +178,12 @@
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/YarnControllerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/MouseHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/PostProcessing/CinemachineVolumeSettings.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Editor/PostProcessing/CinemachineVolumeSettingsEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/SplashScreenController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Art/Beginning Video/NewUnlitShader.shader" />
       </list>
     </option>
   </component>
@@ -265,6 +263,8 @@
       <workItem from="1575314637778" duration="11894000" />
       <workItem from="1575458281626" duration="5956000" />
       <workItem from="1575550332845" duration="770000" />
+      <workItem from="1575589114494" duration="1600000" />
+      <workItem from="1575592176390" duration="613000" />
     </task>
     <servers />
   </component>
@@ -350,26 +350,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs</url>
-          <line>95</line>
+          <line>93</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" initialLine="95">
             <startOffsets>
-              <option value="3442" />
+              <option value="3374" />
             </startOffsets>
             <endOffsets>
-              <option value="3490" />
+              <option value="3422" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs</url>
-          <line>91</line>
+          <line>89</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" initialLine="91">
             <startOffsets>
-              <option value="3306" />
+              <option value="3238" />
             </startOffsets>
             <endOffsets>
-              <option value="3347" />
+              <option value="3279" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
