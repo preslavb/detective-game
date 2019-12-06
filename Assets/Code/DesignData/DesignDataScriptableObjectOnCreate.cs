@@ -9,6 +9,7 @@ namespace DesignData
 {
     public partial class DesignDataScriptableObject
     {
+        #if UNITY_EDITOR
         public void OnCreate()
         {
             _dataType = DesignDataType.Event;
@@ -39,5 +40,6 @@ namespace DesignData
             DestroyImmediate(detailsSource);
             DestroyImmediate(boardSource);
         }
+        #endif
     }
 }
