@@ -1,7 +1,5 @@
-using System.Collections.Generic;
+using System;
 using _Extensions;
-using Boo.Lang.Runtime;
-using Model.Interfaces;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using View.Scripts.Identifiers;
@@ -100,7 +98,7 @@ namespace View.Scripts.MouseHandler
                     return true;
                 }
                 
-                throw new RuntimeException("Deduction board item pairs not handled properly.");
+                throw new Exception("Deduction board item pairs not handled properly.");
             }
 
             // If the object was not handled, route back and try another one in the click stack
