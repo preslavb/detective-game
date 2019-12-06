@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/45204633-corkboard-texture-background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/45204633-corkboard-texture-background.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectOnCreate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_General.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_General.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/OdinSerializer/AOT/Ludiq.OdinSerializer.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/OdinSerializer/AOT/Ludiq.OdinSerializer.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SplashScreen.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -265,6 +253,7 @@
       <workItem from="1575550332845" duration="770000" />
       <workItem from="1575589114494" duration="1600000" />
       <workItem from="1575592176390" duration="613000" />
+      <workItem from="1575633415887" duration="227000" />
     </task>
     <servers />
   </component>
