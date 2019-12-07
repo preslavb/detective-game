@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/View/StartMenuScreenController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/View/StartMenuScreenController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Camera Blends.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera Blends.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ludiq.Generated/Persistent/ProjectSettings/Ludiq.Peek.ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/_UIViewDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/_UIViewDatabase.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Nody Graph.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Nody Graph.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
@@ -41,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/BoardItemScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCB9DAC8-AE3A-4886-93B0-F4CD5B0DB0BE/9d/fb1d2a76/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/_UIViewDatabase.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/DeductionModeClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,9 +78,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/26A12AD1-F5B8-470C-9F06-26AE8224B9A6/6f/2ac5ed37/MouseEventBase`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Engine/Nody/Models/Graph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/GameBootstrapperScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/PostProcessing/CinemachineVolumeSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Shader/Greyscale.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/79/4639a6e9/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/98/a1ccc83f/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/_Extensions/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -97,6 +101,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/IPrefabFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowOpen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Shader/Greyscale UI.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/MouseHandler/ClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Windows/DoozyWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/PairResolver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,6 +111,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDecisionScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowEditorSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Scenes/SampleScene/Global Volume Profile.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/BoardItemPair.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowDrawViews.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/TimeControllerScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,9 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Editor/CreateItemWindowLoadDesignData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowLoadDesignData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/DesignDataAssetProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventPageEndpointScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/GuidHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" />
@@ -175,6 +178,9 @@
         <option value="$PROJECT_DIR$/Assets/Art/Beginning Video/NewUnlitShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Code/View/StartMenuScreenController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Shader/Greyscale.shader" />
+        <option value="$PROJECT_DIR$/Assets/Code/Shader/Greyscale UI.shader" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" />
       </list>
     </option>
   </component>
@@ -256,7 +262,7 @@
       <workItem from="1575550332845" duration="770000" />
       <workItem from="1575589114494" duration="1600000" />
       <workItem from="1575592176390" duration="613000" />
-      <workItem from="1575633415887" duration="2389000" />
+      <workItem from="1575633415887" duration="8230000" />
     </task>
     <servers />
   </component>

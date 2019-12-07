@@ -48,6 +48,10 @@
             <e p="PairResolver.cs" t="Include" />
             <e p="PairResultLookupTable.cs" t="Include" />
           </e>
+          <e p="Shader" t="Include">
+            <e p="Greyscale UI.shader" t="Include" />
+            <e p="Greyscale.shader" t="Include" />
+          </e>
           <e p="View" t="Include">
             <e p="BoardCameraController.cs" t="Include" />
             <e p="BoardItemPositionHandler.cs" t="Include" />
@@ -72,6 +76,7 @@
             <e p="Scripts" t="Include">
               <e p="BoardItemScript.cs" t="Include" />
               <e p="Events" t="Include">
+                <e p="DialogueControllerScript.cs" t="Include" />
                 <e p="EventCooldownScript.cs" t="Include" />
                 <e p="EventDecisionScript.cs" t="Include" />
                 <e p="EventDetailsHandler.cs" t="Include" />
