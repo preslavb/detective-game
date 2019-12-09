@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 234352460789394763, guid: f6886bdefbb9c2144ab894ef08f1eb70,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8547544877371840497, guid: f6886bdefbb9c2144ab894ef08f1eb70,
         type: 3}
@@ -98,11 +98,16 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 82cff3e8c78c72949aaef188ed85a1bd, type: 3}
+    - target: {fileID: 2946097965103902115, guid: f6886bdefbb9c2144ab894ef08f1eb70,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6952068788052679110, guid: f6886bdefbb9c2144ab894ef08f1eb70,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0ec1bb8eabc3ed74abf3f5668adeb399,
+      objectReference: {fileID: 21300000, guid: 7074929ded8e5ff44bbbe0f2ec8a8367,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6886bdefbb9c2144ab894ef08f1eb70, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using _Extensions;
 using UnityEngine;
@@ -8,7 +9,7 @@ using View.Scripts.Identifiers;
 
 namespace View
 {
-    [RequireComponent(typeof(ClickHandlerScript))]
+    [RequireComponent(typeof(ClickHandlerScript), typeof(AudioSource))]
     public class BoardItemPositionHandler: MonoBehaviour
     {
         //______________ PRIVATE STATE  ______________
@@ -24,6 +25,16 @@ namespace View
         private bool _moveWithMouse = false;
 
         private Vector3 _startPosition;
+
+        private AudioSource _audioSource;
+        
+        [SerializeField] private AudioClip _pickUpAudio;
+        [SerializeField] private AudioClip _dropAudio;
+
+        private void Awake()
+        {
+            _audioSource = GetComponent<AudioSource>();
+        }
 
         public void Initialize(Camera camera, Transform board)
         {
@@ -48,6 +59,7 @@ namespace View
             _boardOffset = -0.215f;
             Update();
 
+            _audioSource.PlayOneShot(_pickUpAudio);
             
             // Bring the canvas forward
             GetComponentInChildren<Canvas>().sortingOrder = 100;
@@ -57,6 +69,8 @@ namespace View
         {
             transform.position = _startPosition;
             _moveWithMouse = false;
+            
+            _audioSource.PlayOneShot(_dropAudio);
 
             _boardOffset = -0.015f;
             Update();
@@ -72,11 +86,19 @@ namespace View
             {
                 SlotScript slotElement = null;
                 
-                if (elements.Any(result => (slotElement = result.gameObject.GetComponent<SlotScript>()) != null) && slotElement.Input(gameObject.GetComponent<ViewIdentifierScript>()))
+                if (elements.Any(result => (slotElement = result.gameObject.GetComponent<SlotScript>()) != null))
                 {
-                    Destroy(gameObject);
+                    if (slotElement.Input(gameObject.GetComponent<ViewIdentifierScript>()))
+                        Destroy(gameObject);
+                    else
+                    {
+                        ResetPosition();
+                        return;
+                    }
                 }
             }
+            
+            _audioSource.PlayOneShot(_dropAudio);
 
             _boardOffset = -0.015f;
             Update();

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: _SoundyDatabase
   m_EditorClassIdentifier: 
   DatabaseNames:
+  - Detective Music
+  - Effects
   - Example Alerts
   - Example Clicks
   - Example Music
@@ -24,3 +26,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6efd9700ef4c504f997ee462880e61e, type: 2}
   - {fileID: 11400000, guid: f357811014801dc489af9b0c14c815e3, type: 2}
   - {fileID: 11400000, guid: 2982c9fe71298bb448d90d93217dc87f, type: 2}
+  - {fileID: 11400000, guid: f7b092aafed467040ab45a73d363115e, type: 2}
+  - {fileID: 11400000, guid: 820930dc3f062624bb99e9194baeba38, type: 2}

@@ -2,6 +2,7 @@ using System;
 using Cinemachine;
 using UnityEngine;
 using _Extensions;
+using UnityEngine.EventSystems;
 
 namespace View
 {
@@ -68,7 +69,7 @@ namespace View
                 }
             }
 
-            if (Input.mouseScrollDelta.y != 0)
+            if (Input.mouseScrollDelta.y != 0 && !EventSystem.current.IsPointerOverGameObject())
             {
                 transform.Translate(new Vector3().With(z: Input.mouseScrollDelta.y));
             }

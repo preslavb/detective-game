@@ -1,6 +1,6 @@
 ﻿// Unity built-in shader source. Copyright (c) 2016 Unity Technologies. MIT license (see license.txt)
 
-Shader "UI/Default"
+Shader "UI/Greyscale"
 {
     Properties
     {
@@ -111,7 +111,7 @@ Shader "UI/Default"
                 // grayscale
                 float gray = (color.r + color.g + color.b) * 0.3;
 
-                return fixed4(gray, gray, gray, color.a);
+                return color;
             }
         ENDCG
         }
