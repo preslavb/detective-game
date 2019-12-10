@@ -21,10 +21,12 @@ namespace View.Scripts.Events
         private TextMeshProUGUI _textMeshPro;
 
         [SerializeField] private UnityEvent _unityEvent;
+        [SerializeField] private UnityEvent _onCompleteEvent;
 
         public TextMeshProUGUI TextMeshPro => _textMeshPro;
 
         public UnityEvent UnityEvent => _unityEvent;
+        public UnityEvent OnCompleteEvent => _onCompleteEvent;
     }
     
     public class DialogueControllerScript: MonoBehaviour
@@ -106,8 +108,10 @@ namespace View.Scripts.Events
         {
             // Remove the layout element from the previous object
             if (_textIndex > 0)
+            {
                 Destroy(_slides[_textIndex - 1].TextMeshPro.gameObject.GetComponent<LayoutElement>());
-            
+            }
+
             var currentTextObject = _slides[_textIndex];
 
             // Run any events
@@ -143,6 +147,8 @@ namespace View.Scripts.Events
         {
             // Stop the coroutine
             StopCoroutine(_writingCoroutine);
+            
+            _slides[_textIndex].OnCompleteEvent?.Invoke();
 
             // Play the sound effect
             _typewriterAudio.PlayOneShot(_typewriterDingClip);

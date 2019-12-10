@@ -16,9 +16,14 @@ namespace View.ViewDataClasses
         [SerializeField] 
         private Vector2? _startingPosition;
 
+        [SerializeField] 
+        [AssetsOnly] 
+        private GameObject _detailsPrefab;
+
         public ViewIdentifierScript ViewIdentifierScript => _viewIdentifierScript;
         public Vector2? StartingPosition => _startingPosition;
-        
+        public GameObject DetailsPrefab => _detailsPrefab;
+
         public void Initialize(Guid guid)
         {
             _viewIdentifierScript.Initialize(guid);

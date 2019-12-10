@@ -24,6 +24,9 @@ namespace View.PrefabFactories
             // Translate the object if a starting position was given
             result.transform.Translate(new Vector3(factoryData.ViewData.StartingPosition?.x ?? 0, factoryData.ViewData.StartingPosition?.y ?? 0), ViewHandlerDataReference.FactoryRoot);
 
+            result.GetComponent<ClickHandlerScript>().OnPressRelease += () =>
+                factoryData.DetailsHandlerReference.TransitionToDetails(factoryData.ViewData.DetailsPrefab);
+            
             // Initialize the board item position handler
             result.GetComponent<BoardItemPositionHandler>().Initialize(ViewHandlerDataReference.MainCamera, ViewHandlerDataReference.FactoryRoot);
 

@@ -75,13 +75,23 @@ PrefabInstance:
     - target: {fileID: 1335997514851019424, guid: 3d6ec77c1b06de945926b14ef7bb737b,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -0.2
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335997514851019424, guid: 3d6ec77c1b06de945926b14ef7bb737b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335997514851019424, guid: 3d6ec77c1b06de945926b14ef7bb737b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3963737460882981295, guid: 3d6ec77c1b06de945926b14ef7bb737b,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7d5db35537f2c2a4baefcce8bbd0d1d0,
+      objectReference: {fileID: 21300000, guid: a3e14dba16390234e899ea793dc1cac5,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d6ec77c1b06de945926b14ef7bb737b, type: 3}

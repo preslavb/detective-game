@@ -4,28 +4,28 @@
     <list default="true" id="1c9b32e5-771e-4e55-9652-f7d40b066129" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Detective Game Prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Shader/Greyscale UI.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Shader/Greyscale UI.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/EvidenceFactoryData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/DetailsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/DetailsHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Board Item Data/BoardItemLookUpTable.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/Soundy/_SoundyDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/Soundy/_SoundyDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_MeetTerry.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_MeetTerry.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Master Graph With Start Menu (WIP).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/BoardItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/BoardItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Resources/ResourceBoardPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Resources/ResourceBoardPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/0. Intro Event/Intro Event Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/0. Intro Event/Intro Event Details.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/0. Intro Event/Intro Event Nody Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/0. Intro Event/Intro Event Nody Graph.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Details.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Nody Graph 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/1. Just Another Commission/Just Another Commission Nody Graph 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Dialogue Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Dialogue Box.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIButton/UIButton_InvestigateCompanies.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIButton/UIButton_InvestigateCompanies.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_InvestigateCompanies.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/UIView_InvestigateCompanies.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Events/Meet Terry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Events/Meet Terry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Resources/Access Card Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Board Representations/Resources/Access Card Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Investigate Companies/Investigate Companies Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Investigate Companies/Investigate Companies Details.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Investigate Companies/Investigate Companies Nody Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Investigate Companies/Investigate Companies Nody Graph.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Details.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Details.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Nody Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Event Screens/Meet Terry/Meet Terry Nody Graph.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SplashScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Title.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Title.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/title.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/title.anim" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleSceneNew.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/GameTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Model/Interfaces/IExpirable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/EvidenceDetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/DetailsHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/StartMenuScreenController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.cs" root0="FORCE_HIGHLIGHTING" />
@@ -123,6 +123,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventCooldownScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Board Representations/Resources/Access Card Prefab.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDecisionScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Windows/NodyWindowEditorSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art/Scenes/SampleScene/Global Volume Profile.asset" root0="FORCE_HIGHLIGHTING" />
@@ -144,17 +145,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventPageEndpointScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/GuidHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EventFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/EvidenceFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/Event.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/ModelSimulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Model/BoardItemModels/BoardItemSerializable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/EventDetailsHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Identifiers/ViewIdentifierScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotScript.cs" />
@@ -163,7 +159,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Controller/BoardItemIdentifierLookupTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Interfaces/IBoardItemViewProperties.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/EvidenceViewData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/DesignData/DesignDataScriptableObjectEditorOnly.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/DesignDataInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateitemWindow/CreateItemWindowFactory.cs" />
@@ -193,6 +188,12 @@
         <option value="$PROJECT_DIR$/Assets/Code/Shader/Greyscale.shader" />
         <option value="$PROJECT_DIR$/Assets/Code/View/BoardCameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/View/BoardItemPositionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewHandlerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/ViewDataClasses/ResourceViewData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/FactoryData/ResourceFactoryData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/InstantiationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Evidence/DetailsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Shader/Greyscale UI.shader" />
         <option value="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" />
       </list>
@@ -234,10 +235,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="49412">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="14116">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="49412" />
+      <option name="pid" value="14116" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -277,7 +278,8 @@
       <workItem from="1575589114494" duration="1600000" />
       <workItem from="1575592176390" duration="613000" />
       <workItem from="1575633415887" duration="8230000" />
-      <workItem from="1575882379022" duration="10879000" />
+      <workItem from="1575882379022" duration="14485000" />
+      <workItem from="1575923363798" duration="2473000" />
     </task>
     <servers />
   </component>
@@ -388,17 +390,43 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs</url>
-          <line>97</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/DialogueControllerScript.cs" initialLine="71">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs</url>
+          <line>27</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/PrefabFactories/ResourceFactory.cs" initialLine="27">
             <startOffsets>
-              <option value="2426" />
+              <option value="1157" />
             </startOffsets>
             <endOffsets>
-              <option value="2474" />
+              <option value="1248" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs</url>
+          <line>56</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" initialLine="56">
+            <startOffsets>
+              <option value="1542" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1570" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/View/Scripts/Events/SlotRequirementScript.cs" initialLine="40">
+            <startOffsets>
+              <option value="940" />
+            </startOffsets>
+            <endOffsets>
+              <option value="982" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

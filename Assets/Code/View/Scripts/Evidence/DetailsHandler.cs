@@ -1,30 +1,43 @@
 using Cinemachine;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace View.Scripts.Evidence
 {
-    public class EvidenceDetailsHandler: MonoBehaviour
+    public class DetailsHandler: MonoBehaviour
     {
         [SerializeField] private CinemachineVirtualCamera _boardCamera;
         [SerializeField] private CinemachineVirtualCamera _detailsCamera;
+
+        [SerializeField] private Button _backButton;
 
         [SerializeField] 
         [SceneObjectsOnly]
         private Transform _detailsRoot;
 
+        private GameObject _spawnedGameObject;
+
         private void Start()
         {
-            // _boardCamera.MoveToTopOfPrioritySubqueue();
+            _backButton.onClick.AddListener(TransitionBack);
         }
 
         public void TransitionToDetails(GameObject prefabToUse)
         {
             // Switch to the details camera
-            _detailsCamera.MoveToTopOfPrioritySubqueue();
+            _boardCamera.gameObject.SetActive(false);
             
             // Spawn the prefab at the correct place
-            Instantiate(prefabToUse, _detailsRoot);
+            _spawnedGameObject = Instantiate(prefabToUse, _detailsRoot);
+        }
+
+        private void TransitionBack()
+        {
+            _boardCamera.gameObject.SetActive(true);
+            
+            Destroy(_spawnedGameObject);
         }
     }
 }

@@ -86,7 +86,7 @@
                 <e p="SlotScript.cs" t="Include" />
               </e>
               <e p="Evidence" t="Include">
-                <e p="EvidenceDetailsHandler.cs" t="Include" />
+                <e p="DetailsHandler.cs" t="Include" />
               </e>
               <e p="Identifiers" t="Include">
                 <e p="ViewIdentifierScript.cs" t="Include" />

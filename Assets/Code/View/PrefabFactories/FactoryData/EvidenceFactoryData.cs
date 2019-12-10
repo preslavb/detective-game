@@ -8,6 +8,6 @@ namespace View.PrefabFactories.FactoryData
     public struct EvidenceFactoryData: IFactoryData
     {
         public EvidenceViewData ViewData;
-        public EvidenceDetailsHandler EvidenceDetailsHandlerReference;
+        public DetailsHandler DetailsHandlerReference;
     }
 }

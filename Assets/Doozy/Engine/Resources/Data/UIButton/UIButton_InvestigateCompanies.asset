@@ -16,3 +16,20 @@ MonoBehaviour:
   DatabaseType: 0
   Names:
   - Access Card Input
+  - First Page - Blend In With the Other Workers
+  - First Page - Hide and Sneak Up to the Facility
+  - Blend In With the Other Workers - Door
+  - Hide and Sneak - Door
+  - Door - Sneak To Offices
+  - Sneak To Offices - Explore the Offices for Clues
+  - Sneak To Offices - Search Through Records
+  - Explore the Offices for Clues - Found Weapons
+  - Search Through Records - Found Weapons
+  - Found Weapons - Go Up To Office
+  - Go Up To Office - Discovery
+  - Discovery - Discovered
+  - Discovered - Fight the Worker
+  - Discovered - Flee the Scene
+  - Fight the Worker - Pursued
+  - Flee the Scene - Pursued
+  - Escape to the Shuttle - End Event

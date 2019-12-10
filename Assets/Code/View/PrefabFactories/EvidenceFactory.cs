@@ -25,7 +25,7 @@ namespace View.PrefabFactories
 
             // Hook up the event data handler
             result.GetComponent<ClickHandlerScript>().OnPressRelease += () =>
-                factoryData.EvidenceDetailsHandlerReference.TransitionToDetails(factoryData.ViewData.DetailsPrefab);
+                factoryData.DetailsHandlerReference.TransitionToDetails(factoryData.ViewData.DetailsPrefab);
 
             // Initialize the board item position handler
             result.GetComponent<BoardItemPositionHandler>().Initialize(ViewHandlerDataReference.MainCamera, ViewHandlerDataReference.FactoryRoot);

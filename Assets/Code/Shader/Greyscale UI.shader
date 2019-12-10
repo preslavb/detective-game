@@ -111,7 +111,7 @@ Shader "UI/Greyscale"
                 // grayscale
                 float gray = (color.r + color.g + color.b) * 0.3;
 
-                return color;
+                return fixed4(gray, gray, gray, color.a);
             }
         ENDCG
         }

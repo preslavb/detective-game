@@ -82,7 +82,7 @@ namespace Controller
             result = _viewHandler.CreateWithFactory<EvidenceFactory, EvidenceFactoryData>(new EvidenceFactoryData
             {
                 ViewData = (EvidenceViewData) _identifierLookupTable[evidence],
-                EvidenceDetailsHandlerReference = _viewHandlerData.EvidenceDetailsHandler
+                DetailsHandlerReference = _viewHandlerData.DetailsHandler
             });
         }
 
@@ -90,7 +90,8 @@ namespace Controller
         {
             result = _viewHandler.CreateWithFactory<ResourceFactory, ResourceFactoryData>(new ResourceFactoryData
             {
-                ViewData = (ResourceViewData) _identifierLookupTable[resource]
+                ViewData = (ResourceViewData) _identifierLookupTable[resource],
+                DetailsHandlerReference = _viewHandlerData.DetailsHandler
             });
         }
 
