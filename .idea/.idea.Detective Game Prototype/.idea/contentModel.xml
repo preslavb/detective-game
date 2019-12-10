@@ -97,6 +97,7 @@
                 <e p="IClickHandler.cs" t="Include" />
                 <e p="MouseHandler.cs" t="Include" />
                 <e p="NormalClickHandler.cs" t="Include" />
+                <e p="TooltipScript.cs" t="Include" />
               </e>
               <e p="TimeControllerScript.cs" t="Include" />
               <e p="YarnControllerScript.cs" t="Include" />

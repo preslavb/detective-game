@@ -110,6 +110,11 @@ namespace Controller
             // Find the associated event
             Event @event = _modelViewGuids.FirstOrDefault(x => x.Value == eventCompleted.Guid).Key as Event;
 
+            if (@event!= null && @event.Result != null)
+            {
+                _modelSimulation.InsertIntoBoard(@event.Result);
+            }
+
             if (@event != null && @event.DestroyOnCompletion)
             {
                 _modelSimulation.RemoveFromBoard(@event);

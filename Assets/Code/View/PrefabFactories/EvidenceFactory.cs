@@ -13,12 +13,16 @@ namespace View.PrefabFactories
 
         public ViewHandlerData ViewHandlerDataReference { get; }
 
-        public GameObject CreateInstance(EvidenceFactoryData factoryData)
+        public GameObject CreateInstance(EvidenceFactoryData factoryData, string name)
         {
             // Instantiate the prefab
             var result = GameObject.Instantiate(factoryData.ViewData.ViewIdentifierScript.gameObject, ViewHandlerDataReference.FactoryRoot);
 
-            result.GetComponent<ViewIdentifierScript>().Initialize(factoryData.ViewData.ViewIdentifierScript.Guid);
+            var viewIdentifier = result.GetComponent<ViewIdentifierScript>();
+            viewIdentifier.Initialize(factoryData.ViewData.ViewIdentifierScript.Guid);
+            
+            viewIdentifier.GetName += () => name;
+            viewIdentifier.GetTypeName += () => "Clue";
 
             // Translate the object if a starting position was given
             result.transform.Translate(new Vector3(factoryData.ViewData.StartingPosition?.x ?? 0, factoryData.ViewData.StartingPosition?.y ?? 0), ViewHandlerDataReference.FactoryRoot);

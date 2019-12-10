@@ -12,6 +12,9 @@ namespace View.Scripts.Identifiers
 
         public Guid Guid => _guid;
 
+        public Func<string> GetName;
+        public Func<string> GetTypeName;
+
         public void Initialize(Guid guid)
         {
             if (_initialized)
@@ -22,6 +25,16 @@ namespace View.Scripts.Identifiers
 
             _initialized = true;
             _guid = guid;
+        }
+
+        private void OnMouseEnter()
+        {
+            TooltipScript.Instance.ShowTooltip($"{GetName?.Invoke() ?? "Unknown Name"}\n{GetTypeName?.Invoke() ?? "Unknown Type"}");
+        }
+
+        private void OnMouseExit()
+        {
+            TooltipScript.Instance.HideTooltip();
         }
     }
 }

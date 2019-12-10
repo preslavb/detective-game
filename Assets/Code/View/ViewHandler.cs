@@ -38,11 +38,11 @@ namespace View
             return ((T) _factories[typeof(T)]);
         }
         
-        public GameObject CreateWithFactory<T, TQ>(TQ dataToUse) 
+        public GameObject CreateWithFactory<T, TQ>(TQ dataToUse, string name) 
             where TQ: IFactoryData
             where T: IPrefabFactory<TQ>
         {
-            return ((T) _factories[typeof(T)]).CreateInstance(dataToUse);
+            return ((T) _factories[typeof(T)]).CreateInstance(dataToUse, name);
         }
         
         public void UpdateViewHandler(float timescale)

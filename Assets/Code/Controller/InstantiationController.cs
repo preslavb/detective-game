@@ -69,7 +69,7 @@ namespace Controller
                 ViewData = (EventViewData) _identifierLookupTable[@event],
                 EventDetailsHandler = _viewHandlerData.EventDetailsHandler,
                 ExpirationTime = @event.ExpirationTime
-            });
+            }, @event.name);
                     
             // Hook up dependencies
             var eventScript = result.GetComponent<EventCooldownScript>();
@@ -83,7 +83,7 @@ namespace Controller
             {
                 ViewData = (EvidenceViewData) _identifierLookupTable[evidence],
                 DetailsHandlerReference = _viewHandlerData.DetailsHandler
-            });
+            }, evidence.name);
         }
 
         private void InstantiateResource(Resource resource, out GameObject result)
@@ -92,7 +92,7 @@ namespace Controller
             {
                 ViewData = (ResourceViewData) _identifierLookupTable[resource],
                 DetailsHandlerReference = _viewHandlerData.DetailsHandler
-            });
+            }, resource.name);
         }
 
         public void DestroyItem(BoardItemSerializable item)

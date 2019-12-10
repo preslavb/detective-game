@@ -89,10 +89,14 @@ namespace View
                 if (elements.Any(result => (slotElement = result.gameObject.GetComponent<SlotScript>()) != null))
                 {
                     if (slotElement.Input(gameObject.GetComponent<ViewIdentifierScript>()))
+                    {
                         Destroy(gameObject);
+                        TooltipScript.Instance.HideTooltip();
+                    }
                     else
                     {
                         ResetPosition();
+                        TooltipScript.Instance.HideTooltip();
                         return;
                     }
                 }
