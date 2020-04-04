@@ -43,7 +43,7 @@ namespace View.Scripts.Events
         private void OnEventCompleted()
         {
             EventCompleted?.Invoke(_currentScreenOpen);
-            Destroy(_currentScreenOpen);
+            Destroy(_currentScreenOpen.gameObject);
         }
 
         public event EventCompletionDelegate EventCompleted;

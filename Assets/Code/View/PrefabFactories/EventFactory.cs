@@ -33,6 +33,8 @@ namespace View.PrefabFactories
             {
                 result.GetComponent<EventCooldownScript>().RadialCountdown.gameObject.SetActive(true);
                 result.GetComponent<EventCooldownScript>().RadialCountdown.fillAmount = 1;
+                result.GetComponent<EventCooldownScript>().DidExpire += () =>
+                    factoryData.EventDetailsHandler.ShowDetailsForEvent(factoryData.ViewData.EventDetailsPrefab);
             }
 
             else

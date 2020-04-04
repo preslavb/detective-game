@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e611bfb0ccf42e2a56ef43e4d4216d7, type: 3}
-  m_Name: Investigate Companies
+  m_Name: You Feel Tense
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,8 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _expirationTime: 0
+  _expirationTime: 5
   _eventDecisions: []
-  _defaultDecision: {fileID: 11400000, guid: 0267806755fdfa0439db873ba3a59059, type: 2}
-  _result: {fileID: 11400000, guid: a7fb960c4e9286f419869e607e092e0d, type: 2}
+  _defaultDecision: {fileID: 0}
+  _result: {fileID: 0}
   _destroyOnCompletion: 1

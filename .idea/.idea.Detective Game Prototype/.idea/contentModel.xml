@@ -99,6 +99,7 @@
                 <e p="NormalClickHandler.cs" t="Include" />
                 <e p="TooltipScript.cs" t="Include" />
               </e>
+              <e p="MusicController.cs" t="Include" />
               <e p="TimeControllerScript.cs" t="Include" />
               <e p="YarnControllerScript.cs" t="Include" />
             </e>

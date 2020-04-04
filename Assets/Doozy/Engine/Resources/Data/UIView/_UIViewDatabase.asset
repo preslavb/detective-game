@@ -21,6 +21,7 @@ MonoBehaviour:
   - Meet Terry
   - Intro Event
   - Investigate Companies
+  - You Feel Tense
   Categories:
   - {fileID: 11400000, guid: b01e98f4801f7124ba39e1dac4debf90, type: 2}
   - {fileID: 11400000, guid: 9e623da6eace8d346a5a923c0e8f84a8, type: 2}
@@ -28,3 +29,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9c4844c233b7bcc4bbeabf5a1984aea0, type: 2}
   - {fileID: 11400000, guid: 92f8bd39b179b5448bc44e83c2ce789e, type: 2}
   - {fileID: 11400000, guid: 2161466aeb80262498c2a771b9de6d28, type: 2}
+  - {fileID: 11400000, guid: 318cd9a5b889b1e468c348c8e84a84f8, type: 2}

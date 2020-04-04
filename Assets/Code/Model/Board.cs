@@ -19,6 +19,7 @@ namespace Model
         {
             _boardItems.Add(item);
             DidInsertItem?.Invoke(item);
+            item.OnExpire += () => DidItemExpire?.Invoke(item);
         }
 
         public void DeleteItem(BoardItemSerializable item)
@@ -29,5 +30,6 @@ namespace Model
 
         public event BoardItemInfoDelegate DidInsertItem;
         public event BoardItemInfoDelegate DidDeleteItem;
+        public event BoardItemInfoDelegate DidItemExpire;
     }
 }

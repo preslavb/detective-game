@@ -77,11 +77,24 @@ namespace Controller
             // Subscribe to the model actions
             _modelSimulation.Board.DidInsertItem += _instantiationController.InstantiateItem;
             _modelSimulation.Board.DidDeleteItem += _instantiationController.DestroyItem;
+            _modelSimulation.Board.DidItemExpire += HandleExpire;
             
             // Subscribe the game view actions
             _viewHandlerData.MouseHandler.DeductionModeClickHandler.OnCreatedAPair += scripts => _modelSimulation.PairResolver.Resolve(ConstructPair(scripts));
             
             _viewHandler.OnItemInsertRequest += ViewHandlerOnItemInsertRequest;
+        }
+
+        private void HandleExpire(BoardItemSerializable item)
+        {
+            switch (item)
+            {
+                case Event @event:
+                    if (@event.DefaultDecision != null) _modelSimulation.InsertIntoBoard(@event.DefaultDecision);
+                    break;
+                    default:
+                        break;
+            }
         }
 
         private ViewIdentifierScript ViewHandlerOnItemInsertRequest(Guid guid)
